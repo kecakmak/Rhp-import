@@ -22,7 +22,6 @@ my $line;
 while(<FH1>){
    #print $_;
    $line=chomp($_);
-   print $_;
    my ($n,$t) = split("_",$_);
    $a1 = substr($_, 0, 1);
    $a2 = substr($_, 1, 1);
@@ -40,11 +39,6 @@ while(<FH1>){
 	if ($level == 4){$parent = $a1 . $a2 . $a3 . "0";}
 	if ($level == 3){$parent = $a1 . $a2 . "00";}
 	if ($level == 2){$parent = $a1 . "000";} 
-	
-	print "\n\n";
-	print "level : " . $level . "\n";
-	print "self : " . $number . "\n";
-	print "parent : " . $parent . "\n";
 	
 	if ($number eq $parent){
 		open(FW, '>>', "ker_import.xmi") or die $!;
@@ -71,8 +65,8 @@ while(<FH1>){
 		my $insert_child = "<!--childof_" . $n . "-->\n";
 		my $stereotype_xml_child = "<packagedElement xmi:type=\"uml:Stereotype\" xmi:id=\"S_" . $_  . "\" name=\"" . $_ . "\">\n";
 		my $gen_child = "<generalization xmi:type=\"uml:Generalization\" xmi:id=\"S_" . $n . "_S_" . $parent . "\" general=\"S_" . $parent . "\" specific=\"S_". $n . "\"/>\n"; 
-		my $package_end_child = "</packagedElement></packagedElement>\n";
-		$str_child = $str_child . $package_xml_child . $insert_child . $stereotype_xml_child . $gen_child . $package_end_child; 
+		my $package_end_child = "</packagedElement>\n";
+		$str_child = $str_child . $package_xml_child . $insert_child . $package_end_child . $stereotype_xml_child . $gen_child . $package_end_child; 
 		while(<IN>){
 			$_=~s/$str_parent/$str_child/ig;
 			print OUT $_; 
@@ -87,4 +81,4 @@ while(<FH1>){
 open(FI, '>>', "ker_import.xmi") or die $!;
 print FI "<\/packagedElement><\/uml:Model><\/xmi:XMI>\n";
 close(FI);
-close(FH);
+close(FH1);
