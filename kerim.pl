@@ -63,7 +63,7 @@ while(<FH1>){
 		my $str_child = $str_parent . "\n";
 		my $package_xml_child = "<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P_" . $_  . "\" name=\"_" . $n . "\">\n";
 		my $insert_child = "<!--childof_" . $n . "-->\n";
-		my $stereotype_xml_child = "<packagedElement xmi:type=\"uml:Stereotype\" xmi:id=\"S_" . $_  . "\" name=\"" . $_ . "\">\n";
+		my $stereotype_xml_child = "<packagedElement xmi:type=\"uml:Stereotype\" xmi:id=\"S_" . $n  . "\" name=\"" . $_ . "\">\n";
 		my $gen_child = "<generalization xmi:type=\"uml:Generalization\" xmi:id=\"S_" . $n . "_S_" . $parent . "\" general=\"S_" . $parent . "\" specific=\"S_". $n . "\"/>\n"; 
 		my $package_end_child = "</packagedElement>\n";
 		$str_child = $str_child . $package_xml_child . $insert_child . $package_end_child . $stereotype_xml_child . $gen_child . $package_end_child; 

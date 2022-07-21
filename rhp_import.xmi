@@ -1,18 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CG="http://RhapsodyStandardModel.RhpProperties/schemas/CG/_Js860AdAEe20L6GhnqQRdw/0" xmlns:RHP="http://RhapsodyStandardModel.RhpProperties/schemas/RHP/_Js860QdAEe20L6GhnqQRdw/0" xmlns:RhapsodyProfile="http://RhapsodyStandardModel/schemas/RhapsodyProfile/_Js8TwAdAEe20L6GhnqQRdw/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.omg.org/spec/UML/20090901" xsi:schemaLocation="http://RhapsodyStandardModel.RhpProperties/schemas/CG/_Js860AdAEe20L6GhnqQRdw/0 #GUID+RhpProperties_Package_packagedElement_2148_eAnnotations_0_contents_0 http://RhapsodyStandardModel.RhpProperties/schemas/RHP/_Js860QdAEe20L6GhnqQRdw/0 #GUID+RhpProperties_Package_packagedElement_81114_eAnnotations_0_contents_0 http://RhapsodyStandardModel/schemas/RhapsodyProfile/_Js8TwAdAEe20L6GhnqQRdw/0 #GUID_ROOT_Model_packagedElement_1799671379_eAnnotations_0_contents_0 http://www.omg.org/spec/UML/20090901 http://www.eclipse.org/uml2/2.0.0/UML">
-  <uml:Model xmi:id="GUID+f0fdf935-7133-42e9-b74b-8657c8db6bfa" name="NAL">
-    <packagedElement xmi:type="uml:Profile" xmi:id="P01" name="Prototype_Structure">
-      <packagedElement xmi:type="uml:Profile" xmi:id="P_1000" name="_1000">
-		<packagedElement xmi:type="uml:Stereotype" xmi:id="S_1100" name="_1100"/>
-		<packagedElement xmi:type="uml:Profile" xmi:id="P_1100" name="_1100">
-			<packagedElement xmi:type="uml:Stereotype" xmi:id="S_1110" name="_1110">
-				<generalization xmi:type="uml:Generalization" xmi:id="S_1110_S_1100" general="S_1100" specific="S_1110"/> 
-			</packagedElement>
-		</packagedElement>
-	  </packagedElement>
-      <packagedElement xmi:type="uml:Profile" name="_2000"/>
-	</packagedElement>
-</uml:Model>
-</xmi:XMI>
-	
-	  
+<uml:Model name="NAL">
+<packagedElement xmi:type="uml:Profile" xmi:id="P01" name="Prototype_Structure">
+<packagedElement xmi:type="uml:Profile" xmi:id="P_11790" name="_0000">
+<!--childof_11790-->
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11790" name="0000_Richtlinien_und_Leistungen_für_Planung_Bau_und_Nutzung"/>
+<packagedElement xmi:type="uml:Profile" xmi:id="P_7769" name="_1000">
+<!--childof_7769-->
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7769" name="1000_Schiff_mit_Ausrüstung_und_Einrichtung__Übersicht"/>
+<packagedElement xmi:type="uml:Profile" xmi:id="P_11089" name="_2000">
+<!--childof_11089-->
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11089" name="2000_Antriebsanlagen"/>
+<packagedElement xmi:type="uml:Profile" xmi:id="P_10551" name="_3000">
+<!--childof_10551-->
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10551" name="3000_EAnlagen__Übersicht"/>
+<packagedElement xmi:type="uml:Profile" xmi:id="P_9003" name="_4000">
+<!--childof_9003-->
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9003" name="4000_Schiffsbetriebsanlagen__Übersicht"/>
+<packagedElement xmi:type="uml:Profile" xmi:id="P_9508" name="_5000">
+<!--childof_9508-->
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9508" name="5000_Fernmelde_Navigations_Ortungs_und_EloKa_Anlagen"/>
+<packagedElement xmi:type="uml:Profile" xmi:id="P_9548" name="_6000">
+<!--childof_9548-->
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9548" name="6000_Führungs_und_Waffeneinsatzsysteme__Übersicht"/>
+<packagedElement xmi:type="uml:Profile" xmi:id="P_10570" name="_7000">
+<!--childof_10570-->
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10570" name="7000_Waffenanlagen__Übersicht"/>
+<packagedElement xmi:type="uml:Profile" xmi:id="P_8435" name="_8000">
+<!--childof_8435-->
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8435" name="8000_SperrwaffenAnlagen__Übersicht"/>
+<packagedElement xmi:type="uml:Profile" xmi:id="P_10308" name="_9000">
+<!--childof_10308-->
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10308" name="9000_Geräte_Werkzeuge_Ersatzteile_Technische_Unterlagen_Werkzeugmaschinen_Übersicht"/>

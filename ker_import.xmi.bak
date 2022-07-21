@@ -2,24 +2,107 @@
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CG="http://RhapsodyStandardModel.RhpProperties/schemas/CG/_Js860AdAEe20L6GhnqQRdw/0" xmlns:RHP="http://RhapsodyStandardModel.RhpProperties/schemas/RHP/_Js860QdAEe20L6GhnqQRdw/0" xmlns:RhapsodyProfile="http://RhapsodyStandardModel/schemas/RhapsodyProfile/_Js8TwAdAEe20L6GhnqQRdw/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.omg.org/spec/UML/20090901" xsi:schemaLocation="http://RhapsodyStandardModel.RhpProperties/schemas/CG/_Js860AdAEe20L6GhnqQRdw/0 #GUID+RhpProperties_Package_packagedElement_2148_eAnnotations_0_contents_0 http://RhapsodyStandardModel.RhpProperties/schemas/RHP/_Js860QdAEe20L6GhnqQRdw/0 #GUID+RhpProperties_Package_packagedElement_81114_eAnnotations_0_contents_0 http://RhapsodyStandardModel/schemas/RhapsodyProfile/_Js8TwAdAEe20L6GhnqQRdw/0 #GUID_ROOT_Model_packagedElement_1799671379_eAnnotations_0_contents_0 http://www.omg.org/spec/UML/20090901 http://www.eclipse.org/uml2/2.0.0/UML">
 <uml:Model name="NAL">
 <packagedElement xmi:type="uml:Profile" xmi:id="P01" name="Prototype_Structure">
+<packagedElement xmi:type="uml:Profile" xmi:id="P_0000_q" name="_0000">
+<!--childof_0000-->
+<packagedElement xmi:type="uml:Profile" xmi:id="P_0200_s" name="_0200">
+<!--childof_0200-->
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_0200" name="0200_s">
+<generalization xmi:type="uml:Generalization" xmi:id="S_0200_S_0000" general="S_0000" specific="S_0200"/>
+</packagedElement>
+
+<packagedElement xmi:type="uml:Profile" xmi:id="P_0100_s" name="_0100">
+<!--childof_0100-->
+<packagedElement xmi:type="uml:Profile" xmi:id="P_0120_w" name="_0120">
+<!--childof_0120-->
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_0120" name="0120_w">
+<generalization xmi:type="uml:Generalization" xmi:id="S_0120_S_0100" general="S_0100" specific="S_0120"/>
+</packagedElement>
+
+<packagedElement xmi:type="uml:Profile" xmi:id="P_0110_e" name="_0110">
+<!--childof_0110-->
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_0110" name="0110_e">
+<generalization xmi:type="uml:Generalization" xmi:id="S_0110_S_0100" general="S_0100" specific="S_0110"/>
+</packagedElement>
+
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_0100" name="0100_s">
+<generalization xmi:type="uml:Generalization" xmi:id="S_0100_S_0000" general="S_0000" specific="S_0100"/>
+</packagedElement>
+
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_0000" name="0000_q"/>
 <packagedElement xmi:type="uml:Profile" xmi:id="P_1000_a" name="_1000">
 <!--childof_1000-->
 <packagedElement xmi:type="uml:Profile" xmi:id="P_1200_a2" name="_1200">
 <!--childof_1200-->
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_1200_a2" name="1200_a2">
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_1200" name="1200_a2">
 <generalization xmi:type="uml:Generalization" xmi:id="S_1200_S_1000" general="S_1000" specific="S_1200"/>
-</packagedElement></packagedElement>
+</packagedElement>
 
 <packagedElement xmi:type="uml:Profile" xmi:id="P_1100_a1" name="_1100">
 <!--childof_1100-->
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_1100_a1" name="1100_a1">
+<packagedElement xmi:type="uml:Profile" xmi:id="P_1110_a11" name="_1110">
+<!--childof_1110-->
+<packagedElement xmi:type="uml:Profile" xmi:id="P_1112_d" name="_1112">
+<!--childof_1112-->
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_1112" name="1112_d">
+<generalization xmi:type="uml:Generalization" xmi:id="S_1112_S_1110" general="S_1110" specific="S_1112"/>
+</packagedElement>
+
+<packagedElement xmi:type="uml:Profile" xmi:id="P_1111_a" name="_1111">
+<!--childof_1111-->
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_1111" name="1111_a">
+<generalization xmi:type="uml:Generalization" xmi:id="S_1111_S_1110" general="S_1110" specific="S_1111"/>
+</packagedElement>
+
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_1110" name="1110_a11">
+<generalization xmi:type="uml:Generalization" xmi:id="S_1110_S_1100" general="S_1100" specific="S_1110"/>
+</packagedElement>
+
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_1100" name="1100_a1">
 <generalization xmi:type="uml:Generalization" xmi:id="S_1100_S_1000" general="S_1000" specific="S_1100"/>
-</packagedElement></packagedElement>
+</packagedElement>
+
+<packagedElement xmi:type="uml:Profile" xmi:id="P_1010_x" name="_1010">
+<!--childof_1010-->
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_1010" name="1010_x">
+<generalization xmi:type="uml:Generalization" xmi:id="S_1010_S_1000" general="S_1000" specific="S_1010"/>
+</packagedElement>
 
 </packagedElement>
 <packagedElement xmi:type="uml:Stereotype" xmi:id="S_1000" name="1000_a"/>
 <packagedElement xmi:type="uml:Profile" xmi:id="P_2000_b" name="_2000">
 <!--childof_2000-->
+<packagedElement xmi:type="uml:Profile" xmi:id="P_2100_a" name="_2100">
+<!--childof_2100-->
+<packagedElement xmi:type="uml:Profile" xmi:id="P_2130_w" name="_2130">
+<!--childof_2130-->
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_2130" name="2130_w">
+<generalization xmi:type="uml:Generalization" xmi:id="S_2130_S_2100" general="S_2100" specific="S_2130"/>
+</packagedElement>
+
+<packagedElement xmi:type="uml:Profile" xmi:id="P_2120_f" name="_2120">
+<!--childof_2120-->
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_2120" name="2120_f">
+<generalization xmi:type="uml:Generalization" xmi:id="S_2120_S_2100" general="S_2100" specific="S_2120"/>
+</packagedElement>
+
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_2100" name="2100_a">
+<generalization xmi:type="uml:Generalization" xmi:id="S_2100_S_2000" general="S_2000" specific="S_2100"/>
+</packagedElement>
+
 </packagedElement>
 <packagedElement xmi:type="uml:Stereotype" xmi:id="S_2000" name="2000_b"/>
 <packagedElement xmi:type="uml:Profile" xmi:id="P_3000_c" name="_3000">
