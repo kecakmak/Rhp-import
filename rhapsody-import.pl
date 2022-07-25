@@ -9,7 +9,7 @@ close (FI);
 
 my $file = "export_dng.csv";
 
-# First lets get rid of commas, and other unwanted characters within the text and sanitize the module export file
+## First lets get rid of commas, and other unwanted characters within the text and sanitize the module export file
 rename($file, $file . '.bak');
 open(IN, '<', $file . '.bak') or die $!;
 open(OUT, '>', $file) or die $!;
@@ -22,6 +22,8 @@ while(<IN>){
 	$_=~s/_,/_/ig;
 	$_=~s/,_/_/ig;
 	$_=~s/\"//ig;
+	$_=~s/\(//ig;
+	$_=~s/\)//ig;	
 	print OUT $_;	
 }
 close(IN);
@@ -39,7 +41,7 @@ while(<FH1>){
 		
 	if ($parent eq ""){
 		open(FW, '>>', "rhp_import.xmi") or die $!;
-		my $package_xml = "<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P_" . $id  . "\" name=\"_" . $bg_no . "\">";
+		my $package_xml = "<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P_" . $id  . "\" name=\"P_" . $bg_no . "\">";
 		my $insert = "<!--childof_" . $id . "-->\n";
 		my $stereotype_xml = "<packagedElement xmi:type=\"uml:Stereotype\" xmi:id=\"S_" . $id  . "\" name=\"" . $st_text . "\"\/>";
 		my $package_end = "</packagedElement>\n";
@@ -51,6 +53,36 @@ while(<FH1>){
 		print FW "\n";
 		close(FW);
 	}
+	else {
+		my $file = "rhp_import.xmi";
+		rename($file, $file . '.bak');
+		open(IN, '<', $file . '.bak') or die $!;
+		open(OUT, '>', $file) or die $!;
+		my $str_parent = "<!--childof_" . $parent . "-->";
+		my $str_child = $str_parent . "\n";
+		my $package_xml_child = "<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P_" . $id  . "\" name=\"P_" . $bg_no . "\">\n";
+		my $insert_child = "<!--childof_" . $id . "-->\n";
+		my $stereotype_xml_child = "<packagedElement xmi:type=\"uml:Stereotype\" xmi:id=\"S_" . $id  . "\" name=\"" . $st_text . "\">\n";
+		my $gen_child = "<generalization xmi:type=\"uml:Generalization\" xmi:id=\"S_" . $id . "_S_" . $parent . "\" general=\"S_" . $parent . "\" specific=\"S_". $id . "\"/>\n"; 
+		my $package_end_child = "</packagedElement>\n";
+		$str_child = $str_child . $package_xml_child . $insert_child . $package_end_child . $stereotype_xml_child . $gen_child . $package_end_child; 
+		while(<IN>){
+			$_=~s/$str_parent/$str_child/ig;
+			print OUT $_; 
+		}
+		close(IN);
+		close(OUT);
+
+	}
+	
+	
 
 }
+
+open(FI, '>>', "rhp_import.xmi") or die $!;
+print FI "<\/packagedElement><\/uml:Model><\/xmi:XMI>\n";
+close(FI);
 close(FH1);
+close(FH1);
+
+
