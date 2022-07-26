@@ -291,7 +291,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7380" name="P_0856">
 <!--childof_7380-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7380" name="0856_Vorrichtungen_usw._für_Schreibfunk/Datenübertragung_und_BÜ_Anlagen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7380" name="0856_Vorrichtungen_usw._für_SchreibfunkDatenübertragung_und_BÜ_Anlagen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7380_S_12278" general="S_12278" specific="S_7380"/>
 </packagedElement>
 
@@ -424,7 +424,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_6955" name="P_0837">
 <!--childof_6955-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6955" name="0837_Vorrichtungen_usw._für_Automation/Integrierte_Leitanlage_Schiffstechnik">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6955" name="0837_Vorrichtungen_usw._für_AutomationIntegrierte_Leitanlage_Schiffstechnik">
 <generalization xmi:type="uml:Generalization" xmi:id="S_6955_S_7768" general="S_7768" specific="S_6955"/>
 </packagedElement>
 
@@ -795,7 +795,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_11551" name="P_0769">
 <!--childof_11551-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11551" name="0769_Systembeschreibung/Gefährdungsermittlung_gem._§_5_ArbSchG">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11551" name="0769_SystembeschreibungGefährdungsermittlung_gem._§_5_ArbSchG">
 <generalization xmi:type="uml:Generalization" xmi:id="S_11551_S_9608" general="S_9608" specific="S_11551"/>
 </packagedElement>
 
@@ -1047,7 +1047,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_12215" name="P_0727">
 <!--childof_12215-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12215" name="0727_Sonstige_Vorschriften_bzw._Normen_wie_CEN/CENELEC_usw.">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12215" name="0727_Sonstige_Vorschriften_bzw._Normen_wie_CENCENELEC_usw.">
 <generalization xmi:type="uml:Generalization" xmi:id="S_12215_S_9708" general="S_9708" specific="S_12215"/>
 </packagedElement>
 
@@ -1887,7 +1887,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10452" name="P_0491">
 <!--childof_10452-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10452" name="0491_Vorschriften/Anforderungen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10452" name="0491_VorschriftenAnforderungen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10452_S_10685" general="S_10685" specific="S_10452"/>
 </packagedElement>
 
@@ -1992,7 +1992,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_11595" name="P_0471">
 <!--childof_11595-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11595" name="0471_Vorschriften/Anforderungen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11595" name="0471_VorschriftenAnforderungen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_11595_S_6806" general="S_6806" specific="S_11595"/>
 </packagedElement>
 
@@ -2020,7 +2020,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9842" name="P_0463">
 <!--childof_9842-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9842" name="0463_Maßnahmen_zur_Minderung_an_Anlagen/Geräten_HBA_5__8">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9842" name="0463_Maßnahmen_zur_Minderung_an_AnlagenGeräten_HBA_5__8">
 <generalization xmi:type="uml:Generalization" xmi:id="S_9842_S_7895" general="S_7895" specific="S_9842"/>
 </packagedElement>
 
@@ -2034,7 +2034,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_11540" name="P_0461">
 <!--childof_11540-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11540" name="0461_Vorschriften/Anforderungen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11540" name="0461_VorschriftenAnforderungen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_11540_S_7895" general="S_7895" specific="S_11540"/>
 </packagedElement>
 
@@ -2111,7 +2111,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_11650" name="P_0441">
 <!--childof_11650-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11650" name="0441_Vorschriften/Anforderungen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11650" name="0441_VorschriftenAnforderungen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_11650_S_8485" general="S_8485" specific="S_11650"/>
 </packagedElement>
 
@@ -2153,7 +2153,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_11864" name="P_0431">
 <!--childof_11864-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11864" name="0431_Vorschriften/Anforderungen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11864" name="0431_VorschriftenAnforderungen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_11864_S_9174" general="S_9174" specific="S_11864"/>
 </packagedElement>
 
@@ -2195,7 +2195,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_11010" name="P_0421">
 <!--childof_11010-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11010" name="0421_Vorschriften/Anforderungen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11010" name="0421_VorschriftenAnforderungen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_11010_S_9958" general="S_9958" specific="S_11010"/>
 </packagedElement>
 
@@ -2244,7 +2244,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7918" name="P_0411">
 <!--childof_7918-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7918" name="0411_Vorschriften/Anforderungen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7918" name="0411_VorschriftenAnforderungen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7918_S_8277" general="S_8277" specific="S_7918"/>
 </packagedElement>
 
@@ -2699,7 +2699,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7526" name="P_0304">
 <!--childof_7526-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7526" name="0304_EGSicherheitsdatenblätter/Betriebsanweisungen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7526" name="0304_EGSicherheitsdatenblätterBetriebsanweisungen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7526_S_11047" general="S_11047" specific="S_7526"/>
 </packagedElement>
 
@@ -2783,7 +2783,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_12361" name="P_0233">
 <!--childof_12361-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12361" name="0233_Nachweise_Geräte/Anlagen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12361" name="0233_Nachweise_GeräteAnlagen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_12361_S_11145" general="S_11145" specific="S_12361"/>
 </packagedElement>
 
@@ -2870,7 +2870,7 @@
 </packagedElement>
 
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8509" name="0200_Technische/physikalische._Grundlagen_zur_Auslegung_von_Bauelementen_Geräten_und_Fundamenten">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8509" name="0200_Technischephysikalische._Grundlagen_zur_Auslegung_von_Bauelementen_Geräten_und_Fundamenten">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8509_S_11790" general="S_11790" specific="S_8509"/>
 </packagedElement>
 
@@ -3308,7 +3308,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_6982" name="P_0108">
 <!--childof_6982-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6982" name="0108_Raumkurvenblatt/Tankinhalte">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6982" name="0108_RaumkurvenblattTankinhalte">
 <generalization xmi:type="uml:Generalization" xmi:id="S_6982_S_9847" general="S_9847" specific="S_6982"/>
 </packagedElement>
 
@@ -3490,7 +3490,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10484" name="P_0061">
 <!--childof_10484-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10484" name="0061_Änderungsanträge/vorschläge">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10484" name="0061_Änderungsanträgevorschläge">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10484_S_11720" general="S_11720" specific="S_10484"/>
 </packagedElement>
 
@@ -3845,7 +3845,7 @@
 </packagedElement>
 
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10460" name="0000_Technische_Vorschriften_für_Bau/Arbeitssicherheit">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10460" name="0000_Technische_Vorschriften_für_BauArbeitssicherheit">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10460_S_7210" general="S_7210" specific="S_10460"/>
 </packagedElement>
 
@@ -3879,7 +3879,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_11627" name="P_1987">
 <!--childof_11627-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11627" name="1987_Isolierung_für_ELO/Elektriker_1_000_V">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11627" name="1987_Isolierung_für_ELOElektriker_1_000_V">
 <generalization xmi:type="uml:Generalization" xmi:id="S_11627_S_10491" general="S_10491" specific="S_11627"/>
 </packagedElement>
 
@@ -7799,7 +7799,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_12356" name="P_1281">
 <!--childof_12356-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12356" name="1281_Außenhaut_mit_Spanten/Versteifungen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12356" name="1281_Außenhaut_mit_SpantenVersteifungen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_12356_S_11310" general="S_11310" specific="S_12356"/>
 </packagedElement>
 
@@ -7897,7 +7897,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10222" name="P_1252">
 <!--childof_10222-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10222" name="1252_Unterbauten_für_Hebezeuge/Lastenaufnahme_Einrichtung">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10222" name="1252_Unterbauten_für_HebezeugeLastenaufnahme_Einrichtung">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10222_S_6604" general="S_6604" specific="S_10222"/>
 </packagedElement>
 
@@ -9052,7 +9052,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9469" name="P_1039">
 <!--childof_9469-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9469" name="1039_Stabilitätsbuch/_Stabilitätsrechner">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9469" name="1039_Stabilitätsbuch_Stabilitätsrechner">
 <generalization xmi:type="uml:Generalization" xmi:id="S_9469_S_8003" general="S_8003" specific="S_9469"/>
 </packagedElement>
 
@@ -9700,7 +9700,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_12142" name="P_2854">
 <!--childof_12142-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12142" name="2854_FrischkühlwasserÜbernahme/Abgabeeinrichtungen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12142" name="2854_FrischkühlwasserÜbernahmeAbgabeeinrichtungen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_12142_S_7202" general="S_7202" specific="S_12142"/>
 </packagedElement>
 
@@ -9763,7 +9763,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10837" name="P_2844">
 <!--childof_10837-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10837" name="2844_SpeisewasserÜbernahme/Abgabeeinrichtungen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10837" name="2844_SpeisewasserÜbernahmeAbgabeeinrichtungen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10837_S_7474" general="S_7474" specific="S_10837"/>
 </packagedElement>
 
@@ -9833,7 +9833,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8596" name="P_2834">
 <!--childof_8596-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8596" name="2834_SchmierölÜbernahme/Abgabeeinrichtungen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8596" name="2834_SchmierölÜbernahmeAbgabeeinrichtungen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8596_S_10091" general="S_10091" specific="S_8596"/>
 </packagedElement>
 
@@ -9903,7 +9903,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8096" name="P_2824">
 <!--childof_8096-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8096" name="2824_HeizölÜbernahme/Abgabeeinrichtungen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8096" name="2824_HeizölÜbernahmeAbgabeeinrichtungen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8096_S_12153" general="S_12153" specific="S_8096"/>
 </packagedElement>
 
@@ -9973,7 +9973,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10106" name="P_2814">
 <!--childof_10106-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10106" name="2814_KraftstoffÜbernahme/Abgabeeinrichtungen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10106" name="2814_KraftstoffÜbernahmeAbgabeeinrichtungen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10106_S_7299" general="S_7299" specific="S_10106"/>
 </packagedElement>
 
@@ -9994,7 +9994,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_6897" name="P_2811">
 <!--childof_6897-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6897" name="2811_KraftstoffFörderpumpen/Druckwassereinrichtungen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6897" name="2811_KraftstoffFörderpumpenDruckwassereinrichtungen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_6897_S_7299" general="S_7299" specific="S_6897"/>
 </packagedElement>
 
@@ -10120,7 +10120,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_12107" name="P_2764">
 <!--childof_12107-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12107" name="2764_Druckminderer/Armaturen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12107" name="2764_DruckmindererArmaturen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_12107_S_7568" general="S_7568" specific="S_12107"/>
 </packagedElement>
 
@@ -10134,7 +10134,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10698" name="P_2762">
 <!--childof_10698-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10698" name="2762_Luftaufbereitung/Trockner">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10698" name="2762_LuftaufbereitungTrockner">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10698_S_7568" general="S_7568" specific="S_10698"/>
 </packagedElement>
 
@@ -10372,7 +10372,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10494" name="P_2658">
 <!--childof_10494-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10494" name="2658_Gegenläufiger/TandemPropeller">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10494" name="2658_GegenläufigerTandemPropeller">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10494_S_7541" general="S_7541" specific="S_10494"/>
 </packagedElement>
 
@@ -10400,7 +10400,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10266" name="P_2654">
 <!--childof_10266-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10266" name="2654_Ruderpropeller/_Azipod_Einrichtung">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10266" name="2654_Ruderpropeller_Azipod_Einrichtung">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10266_S_7541" general="S_7541" specific="S_10266"/>
 </packagedElement>
 
@@ -10470,7 +10470,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_12010" name="P_2635">
 <!--childof_12010-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12010" name="2635_Steuerungs/Regeleinrichtung">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12010" name="2635_SteuerungsRegeleinrichtung">
 <generalization xmi:type="uml:Generalization" xmi:id="S_12010_S_9740" general="S_9740" specific="S_12010"/>
 </packagedElement>
 
@@ -11310,7 +11310,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7398" name="P_2481">
 <!--childof_7398-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7398" name="2481_ErregerstromUmformer/Steller">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7398" name="2481_ErregerstromUmformerSteller">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7398_S_11200" general="S_11200" specific="S_7398"/>
 </packagedElement>
 
@@ -11450,14 +11450,14 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_6845" name="P_2453">
 <!--childof_6845-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6845" name="2453_Bedienungsstopfen/Filterstopfen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6845" name="2453_BedienungsstopfenFilterstopfen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_6845_S_12400" general="S_12400" specific="S_6845"/>
 </packagedElement>
 
 <packagedElement xmi:type="uml:Profile" xmi:id="P_11874" name="P_2452">
 <!--childof_11874-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11874" name="2452_Elektrolyt/Destillat">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11874" name="2452_ElektrolytDestillat">
 <generalization xmi:type="uml:Generalization" xmi:id="S_11874_S_12400" general="S_12400" specific="S_11874"/>
 </packagedElement>
 
@@ -12134,7 +12134,7 @@
 </packagedElement>
 
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8582" name="2310_Einrichtungen_für_Dampf/SpeisewasserKreislauf">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8582" name="2310_Einrichtungen_für_DampfSpeisewasserKreislauf">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8582_S_9097" general="S_9097" specific="S_8582"/>
 </packagedElement>
 
@@ -12402,7 +12402,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_11488" name="P_2252">
 <!--childof_11488-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11488" name="2252_Frischkühlwasser/SeekühlwasserWärmetauscher">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11488" name="2252_FrischkühlwasserSeekühlwasserWärmetauscher">
 <generalization xmi:type="uml:Generalization" xmi:id="S_11488_S_11791" general="S_11791" specific="S_11488"/>
 </packagedElement>
 
@@ -12493,7 +12493,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7328" name="P_2227">
 <!--childof_7328-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7328" name="2227_Dämmung/Isolierung">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7328" name="2227_DämmungIsolierung">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7328_S_8557" general="S_8557" specific="S_7328"/>
 </packagedElement>
 
@@ -13081,7 +13081,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9061" name="P_2127">
 <!--childof_9061-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9061" name="2127_Dämmung/Isolierung">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9061" name="2127_DämmungIsolierung">
 <generalization xmi:type="uml:Generalization" xmi:id="S_9061_S_11420" general="S_11420" specific="S_9061"/>
 </packagedElement>
 
@@ -13519,7 +13519,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7989" name="P_3953">
 <!--childof_7989-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7989" name="3953_Schalt/_Anschlusskästen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7989" name="3953_Schalt_Anschlusskästen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7989_S_11695" general="S_11695" specific="S_7989"/>
 </packagedElement>
 
@@ -13566,7 +13566,7 @@
 </packagedElement>
 
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8133" name="3940_E_SonderAnlage_Sperrwaffen/Pass._Schiffschutz">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8133" name="3940_E_SonderAnlage_SperrwaffenPass._Schiffschutz">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8133_S_11024" general="S_11024" specific="S_8133"/>
 </packagedElement>
 
@@ -13587,7 +13587,7 @@
 </packagedElement>
 
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8521" name="3930_E_SonderAnlage_Schiffswaffen/leitanlagen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8521" name="3930_E_SonderAnlage_Schiffswaffenleitanlagen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8521_S_11024" general="S_11024" specific="S_8521"/>
 </packagedElement>
 
@@ -13610,7 +13610,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_6846" name="P_3912">
 <!--childof_6846-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6846" name="3912_El._Scheibenwischer/Klarsichtscheiben">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6846" name="3912_El._ScheibenwischerKlarsichtscheiben">
 <generalization xmi:type="uml:Generalization" xmi:id="S_6846_S_9843" general="S_9843" specific="S_6846"/>
 </packagedElement>
 
@@ -14212,7 +14212,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8111" name="P_3743">
 <!--childof_8111-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8111" name="3743_Steuer/Überwachungskasten_Nock">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8111" name="3743_SteuerÜberwachungskasten_Nock">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8111_S_10279" general="S_10279" specific="S_8111"/>
 </packagedElement>
 
@@ -14282,7 +14282,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9150" name="P_3732">
 <!--childof_9150-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9150" name="3732_WST/SSO_Pult">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9150" name="3732_WSTSSO_Pult">
 <generalization xmi:type="uml:Generalization" xmi:id="S_9150_S_9759" general="S_9759" specific="S_9150"/>
 </packagedElement>
 
@@ -14688,7 +14688,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9230" name="P_3658">
 <!--childof_9230-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9230" name="3658_Signal/Gegensprechanlagen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9230" name="3658_SignalGegensprechanlagen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_9230_S_7460" general="S_7460" specific="S_9230"/>
 </packagedElement>
 
@@ -14770,7 +14770,7 @@
 </packagedElement>
 
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9419" name="3630_Bedienpulte/tafeln">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9419" name="3630_Bedienpultetafeln">
 <generalization xmi:type="uml:Generalization" xmi:id="S_9419_S_7040" general="S_7040" specific="S_9419"/>
 </packagedElement>
 
@@ -14807,7 +14807,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9499" name="P_3613">
 <!--childof_9499-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9499" name="3613_Steuerautomatik_Schiffsbetrieb/Schiffssicherung">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9499" name="3613_Steuerautomatik_SchiffsbetriebSchiffssicherung">
 <generalization xmi:type="uml:Generalization" xmi:id="S_9499_S_12340" general="S_12340" specific="S_9499"/>
 </packagedElement>
 
@@ -15073,14 +15073,14 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9822" name="P_3552">
 <!--childof_9822-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9822" name="3552_Ankermanöverlicht/ASW_Blinkanlage">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9822" name="3552_AnkermanöverlichtASW_Blinkanlage">
 <generalization xmi:type="uml:Generalization" xmi:id="S_9822_S_8278" general="S_8278" specific="S_9822"/>
 </packagedElement>
 
 <packagedElement xmi:type="uml:Profile" xmi:id="P_6858" name="P_3551">
 <!--childof_6858-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6858" name="3551_Führer/_Toppmorselicht">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6858" name="3551_Führer_Toppmorselicht">
 <generalization xmi:type="uml:Generalization" xmi:id="S_6858_S_8278" general="S_8278" specific="S_6858"/>
 </packagedElement>
 
@@ -15743,7 +15743,7 @@
 </packagedElement>
 
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8933" name="3360_Anschluss/Verbindungselemente">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8933" name="3360_AnschlussVerbindungselemente">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8933_S_10558" general="S_10558" specific="S_8933"/>
 </packagedElement>
 
@@ -15878,7 +15878,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10675" name="P_3331">
 <!--childof_10675-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10675" name="3331_Leistungsschalter/Schutzschalter">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10675" name="3331_LeistungsschalterSchutzschalter">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10675_S_6654" general="S_6654" specific="S_10675"/>
 </packagedElement>
 
@@ -15934,14 +15934,14 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7816" name="P_3319">
 <!--childof_7816-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7816" name="3319_Einbauger._Baugr._Bauelem._ggf._detaill._und_332060/3600">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7816" name="3319_Einbauger._Baugr._Bauelem._ggf._detaill._und_3320603600">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7816_S_10787" general="S_10787" specific="S_7816"/>
 </packagedElement>
 
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8720" name="P_3318">
 <!--childof_8720-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8720" name="3318_Int._Steuer_Regel_Überwachungseinrichtung_detaill._und_3600/3700">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8720" name="3318_Int._Steuer_Regel_Überwachungseinrichtung_detaill._und_36003700">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8720_S_10787" general="S_10787" specific="S_8720"/>
 </packagedElement>
 
@@ -15955,14 +15955,14 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10514" name="P_3313">
 <!--childof_10514-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10514" name="3313_Verbraucherschaltanlagen/Gruppen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10514" name="3313_VerbraucherschaltanlagenGruppen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10514_S_10787" general="S_10787" specific="S_10514"/>
 </packagedElement>
 
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7431" name="P_3312">
 <!--childof_7431-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7431" name="3312_Verteilerschaltanlagen/Hauptgruppen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7431" name="3312_VerteilerschaltanlagenHauptgruppen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7431_S_10787" general="S_10787" specific="S_7431"/>
 </packagedElement>
 
@@ -16235,7 +16235,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7884" name="P_3219">
 <!--childof_7884-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7884" name="3219_Baugruppen_elemente_ggf._detailliert_unter_3300/3600">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7884" name="3219_Baugruppen_elemente_ggf._detailliert_unter_33003600">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7884_S_11508" general="S_11508" specific="S_7884"/>
 </packagedElement>
 
@@ -16466,7 +16466,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10068" name="P_3169">
 <!--childof_10068-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10068" name="3169_Baugruppen_Bauelemente_ggf._detailliert_unter_3300/3600">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10068" name="3169_Baugruppen_Bauelemente_ggf._detailliert_unter_33003600">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10068_S_10017" general="S_10017" specific="S_10068"/>
 </packagedElement>
 
@@ -16487,14 +16487,14 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8082" name="P_3163">
 <!--childof_8082-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8082" name="3163_Frequenzumrichter_AC/ACUmformer">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8082" name="3163_Frequenzumrichter_ACACUmformer">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8082_S_10017" general="S_10017" specific="S_8082"/>
 </packagedElement>
 
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10361" name="P_3162">
 <!--childof_10361-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10361" name="3162_Wechselrichter_DC/ACUmformer">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10361" name="3162_Wechselrichter_DCACUmformer">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10361_S_10017" general="S_10017" specific="S_10361"/>
 </packagedElement>
 
@@ -16508,7 +16508,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7777" name="P_3159">
 <!--childof_7777-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7777" name="3159_Baugruppen_Bauelemente_ggf._detailliert_unter_3300/3600">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7777" name="3159_Baugruppen_Bauelemente_ggf._detailliert_unter_33003600">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7777_S_9711" general="S_9711" specific="S_7777"/>
 </packagedElement>
 
@@ -16536,21 +16536,21 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8341" name="P_3153">
 <!--childof_8341-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8341" name="3153_Frequenzumrichter_AC/AC">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8341" name="3153_Frequenzumrichter_ACAC">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8341_S_9711" general="S_9711" specific="S_8341"/>
 </packagedElement>
 
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9550" name="P_3152">
 <!--childof_9550-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9550" name="3152_Wechselrichter_DC/AC">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9550" name="3152_Wechselrichter_DCAC">
 <generalization xmi:type="uml:Generalization" xmi:id="S_9550_S_9711" general="S_9711" specific="S_9550"/>
 </packagedElement>
 
 <packagedElement xmi:type="uml:Profile" xmi:id="P_6832" name="P_3151">
 <!--childof_6832-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6832" name="3151_Gleichrichter_AC/DC">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6832" name="3151_Gleichrichter_ACDC">
 <generalization xmi:type="uml:Generalization" xmi:id="S_6832_S_9711" general="S_9711" specific="S_6832"/>
 </packagedElement>
 
@@ -16564,7 +16564,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8772" name="P_3139">
 <!--childof_8772-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8772" name="3139_Baugruppen_Bauelemente_ggf._detailliert_unter_3300/3600">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8772" name="3139_Baugruppen_Bauelemente_ggf._detailliert_unter_33003600">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8772_S_10843" general="S_10843" specific="S_8772"/>
 </packagedElement>
 
@@ -16662,7 +16662,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_6885" name="P_3116">
 <!--childof_6885-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6885" name="3116_LandBord/BordBord_Stromversorgung">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6885" name="3116_LandBordBordBord_Stromversorgung">
 <generalization xmi:type="uml:Generalization" xmi:id="S_6885_S_11559" general="S_11559" specific="S_6885"/>
 </packagedElement>
 
@@ -16823,7 +16823,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7024" name="P_3094">
 <!--childof_7024-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7024" name="3094_Rüttelsichere/schräglagensichere_Bauweise">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7024" name="3094_Rüttelsichereschräglagensichere_Bauweise">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7024_S_9956" general="S_9956" specific="S_7024"/>
 </packagedElement>
 
@@ -16849,7 +16849,7 @@
 </packagedElement>
 
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9956" name="3090_Baurichtlinien_für_E_Gerät/Betriebsmittel">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9956" name="3090_Baurichtlinien_für_E_GerätBetriebsmittel">
 <generalization xmi:type="uml:Generalization" xmi:id="S_9956_S_7687" general="S_7687" specific="S_9956"/>
 </packagedElement>
 
@@ -17061,7 +17061,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_6749" name="P_3016">
 <!--childof_6749-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6749" name="3016_LandBord/BordBord_Stromversorgung">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6749" name="3016_LandBordBordBord_Stromversorgung">
 <generalization xmi:type="uml:Generalization" xmi:id="S_6749_S_6622" general="S_6622" specific="S_6749"/>
 </packagedElement>
 
@@ -17089,7 +17089,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9363" name="P_3011">
 <!--childof_9363-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9363" name="3011_Hauptnetz/Haupt_und_Fahrnetz">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9363" name="3011_HauptnetzHaupt_und_Fahrnetz">
 <generalization xmi:type="uml:Generalization" xmi:id="S_9363_S_6622" general="S_6622" specific="S_9363"/>
 </packagedElement>
 
@@ -17492,7 +17492,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9751" name="P_4934">
 <!--childof_9751-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9751" name="4934_Lagerräume_Lagerplätze_für_ET/AT">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9751" name="4934_Lagerräume_Lagerplätze_für_ETAT">
 <generalization xmi:type="uml:Generalization" xmi:id="S_9751_S_6883" general="S_6883" specific="S_9751"/>
 </packagedElement>
 
@@ -17555,7 +17555,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7715" name="P_4915">
 <!--childof_7715-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7715" name="4915_Avionik_Fluggerät/Einsatzsystem_Schiff">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7715" name="4915_Avionik_FluggerätEinsatzsystem_Schiff">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7715_S_11212" general="S_11212" specific="S_7715"/>
 </packagedElement>
 
@@ -17688,14 +17688,14 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10472" name="P_4882">
 <!--childof_10472-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10472" name="4882_Atemluft/Atemgaslagerung">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10472" name="4882_AtemluftAtemgaslagerung">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10472_S_11772" general="S_11772" specific="S_10472"/>
 </packagedElement>
 
 <packagedElement xmi:type="uml:Profile" xmi:id="P_11951" name="P_4881">
 <!--childof_11951-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11951" name="4881_Atemluft/Atemgasbefülleinrichtung">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11951" name="4881_AtemluftAtemgasbefülleinrichtung">
 <generalization xmi:type="uml:Generalization" xmi:id="S_11951_S_11772" general="S_11772" specific="S_11951"/>
 </packagedElement>
 
@@ -17709,7 +17709,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_11125" name="P_4875">
 <!--childof_11125-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11125" name="4875_Druckgasbehälterkühlung/Kühlwanne">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11125" name="4875_DruckgasbehälterkühlungKühlwanne">
 <generalization xmi:type="uml:Generalization" xmi:id="S_11125_S_8506" general="S_8506" specific="S_11125"/>
 </packagedElement>
 
@@ -17814,7 +17814,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7100" name="P_4854">
 <!--childof_7100-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7100" name="4854_Druckminderer/Armaturen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7100" name="4854_DruckmindererArmaturen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7100_S_8371" general="S_8371" specific="S_7100"/>
 </packagedElement>
 
@@ -17828,7 +17828,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7226" name="P_4852">
 <!--childof_7226-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7226" name="4852_Steuerluftaufbereitung/Trockner">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7226" name="4852_SteuerluftaufbereitungTrockner">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7226_S_8371" general="S_8371" specific="S_7226"/>
 </packagedElement>
 
@@ -18010,7 +18010,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_6893" name="P_4816">
 <!--childof_6893-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6893" name="4816_Mikrowellenherd/Mikrowelle">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6893" name="4816_MikrowellenherdMikrowelle">
 <generalization xmi:type="uml:Generalization" xmi:id="S_6893_S_10997" general="S_10997" specific="S_6893"/>
 </packagedElement>
 
@@ -18297,7 +18297,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10013" name="P_4763">
 <!--childof_10013-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10013" name="4763_Verdampfer/Wärmetauscher">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10013" name="4763_VerdampferWärmetauscher">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10013_S_9789" general="S_9789" specific="S_10013"/>
 </packagedElement>
 
@@ -19331,7 +19331,7 @@
 </packagedElement>
 
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7116" name="4580_Abfallzerkleinerer/pressen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7116" name="4580_Abfallzerkleinererpressen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7116_S_12372" general="S_12372" specific="S_7116"/>
 </packagedElement>
 
@@ -19459,7 +19459,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_12130" name="P_4554">
 <!--childof_12130-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12130" name="4554_Abort/UrinalVakuumanlage">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12130" name="4554_AbortUrinalVakuumanlage">
 <generalization xmi:type="uml:Generalization" xmi:id="S_12130_S_9053" general="S_9053" specific="S_12130"/>
 </packagedElement>
 
@@ -19585,7 +19585,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8486" name="P_4535">
 <!--childof_8486-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8486" name="4535_Fetttrenner/_Flotator">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8486" name="4535_Fetttrenner_Flotator">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8486_S_12329" general="S_12329" specific="S_8486"/>
 </packagedElement>
 
@@ -19606,7 +19606,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_11823" name="P_4532">
 <!--childof_11823-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11823" name="4532_Abwasserzellen/Rechenanlage">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11823" name="4532_AbwasserzellenRechenanlage">
 <generalization xmi:type="uml:Generalization" xmi:id="S_11823_S_12329" general="S_12329" specific="S_11823"/>
 </packagedElement>
 
@@ -22739,7 +22739,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7977" name="P_5784">
 <!--childof_7977-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7977" name="5784_WasserschallStör/Täuschanlagen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7977" name="5784_WasserschallStörTäuschanlagen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7977_S_9580" general="S_9580" specific="S_7977"/>
 </packagedElement>
 
@@ -22809,26 +22809,26 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_6657" name="P_5763">
 <!--childof_6657-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6657" name="5763_Elo_UM/GM_Gerät_Boot">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6657" name="5763_Elo_UMGM_Gerät_Boot">
 <generalization xmi:type="uml:Generalization" xmi:id="S_6657_S_8320" general="S_8320" specific="S_6657"/>
 </packagedElement>
 
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10046" name="P_5762">
 <!--childof_10046-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10046" name="5762_Elo_UM/GM_Anlage_Boot">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10046" name="5762_Elo_UMGM_Anlage_Boot">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10046_S_8320" general="S_8320" specific="S_10046"/>
 </packagedElement>
 
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7761" name="P_5761">
 <!--childof_7761-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7761" name="5761_Elo_UM/GM_Anlage_Schiff">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7761" name="5761_Elo_UMGM_Anlage_Schiff">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7761_S_8320" general="S_8320" specific="S_7761"/>
 </packagedElement>
 
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8320" name="5760_Komb._Elo_UM/Elo_GM_Anlagen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8320" name="5760_Komb._Elo_UMElo_GM_Anlagen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8320_S_9621" general="S_9621" specific="S_8320"/>
 </packagedElement>
 
@@ -23131,14 +23131,14 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8333" name="P_5712">
 <!--childof_8333-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8333" name="5712_Fernmeldeaufklärungsempfänger_VHF/UHF">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8333" name="5712_Fernmeldeaufklärungsempfänger_VHFUHF">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8333_S_10560" general="S_10560" specific="S_8333"/>
 </packagedElement>
 
 <packagedElement xmi:type="uml:Profile" xmi:id="P_12451" name="P_5711">
 <!--childof_12451-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12451" name="5711_Fernmeldeaufklärungsempfänger_LF/MF/HF">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12451" name="5711_Fernmeldeaufklärungsempfänger_LFMFHF">
 <generalization xmi:type="uml:Generalization" xmi:id="S_12451_S_10560" general="S_10560" specific="S_12451"/>
 </packagedElement>
 
@@ -23376,7 +23376,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10071" name="P_5689">
 <!--childof_10071-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10071" name="5689_Funkempfänger_V/UHF_Wachempfänger">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10071" name="5689_Funkempfänger_VUHF_Wachempfänger">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10071_S_7151" general="S_7151" specific="S_10071"/>
 </packagedElement>
 
@@ -23691,14 +23691,14 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7291" name="P_5617">
 <!--childof_7291-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7291" name="5617_RF/FSAntennenverteilungsanlagen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7291" name="5617_RFFSAntennenverteilungsanlagen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7291_S_11705" general="S_11705" specific="S_7291"/>
 </packagedElement>
 
 <packagedElement xmi:type="uml:Profile" xmi:id="P_11453" name="P_5616">
 <!--childof_11453-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11453" name="5616_RF/FSEmpfangsantennen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11453" name="5616_RFFSEmpfangsantennen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_11453_S_11705" general="S_11705" specific="S_11453"/>
 </packagedElement>
 
@@ -23712,7 +23712,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10963" name="P_5614">
 <!--childof_10963-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10963" name="5614_Audio/VideoAnlagen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10963" name="5614_AudioVideoAnlagen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10963_S_11705" general="S_11705" specific="S_10963"/>
 </packagedElement>
 
@@ -23733,7 +23733,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9610" name="P_5611">
 <!--childof_9610-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9610" name="5611_Integrierte_RF/FSAnlagen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9610" name="5611_Integrierte_RFFSAnlagen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_9610_S_11705" general="S_11705" specific="S_9610"/>
 </packagedElement>
 
@@ -23813,7 +23813,7 @@
 </packagedElement>
 
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12007" name="5600_Schreibfunk/Datenübertragung_und_BÜ_Anlagen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12007" name="5600_SchreibfunkDatenübertragung_und_BÜ_Anlagen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_12007_S_9508" general="S_9508" specific="S_12007"/>
 </packagedElement>
 
@@ -23978,7 +23978,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8184" name="P_5561">
 <!--childof_8184-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8184" name="5561_SIF_Anlagen_Abfrage/Antwort">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8184" name="5561_SIF_Anlagen_AbfrageAntwort">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8184_S_9576" general="S_9576" specific="S_8184"/>
 </packagedElement>
 
@@ -24146,7 +24146,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7692" name="P_5531">
 <!--childof_7692-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7692" name="5531_Sonobojen_aktiv/passiv">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7692" name="5531_Sonobojen_aktivpassiv">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7692_S_11862" general="S_11862" specific="S_7692"/>
 </packagedElement>
 
@@ -24202,7 +24202,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10613" name="P_5523">
 <!--childof_10613-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10613" name="5523_Sonaranlage_Uboote_kombiniert_passiv/aktiv">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10613" name="5523_Sonaranlage_Uboote_kombiniert_passivaktiv">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10613_S_8031" general="S_8031" specific="S_10613"/>
 </packagedElement>
 
@@ -24216,7 +24216,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9457" name="P_5521">
 <!--childof_9457-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9457" name="5521_Sonaranlage_Überwasserschiffe_kombiniert_passiv/aktiv">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9457" name="5521_Sonaranlage_Überwasserschiffe_kombiniert_passivaktiv">
 <generalization xmi:type="uml:Generalization" xmi:id="S_9457_S_8031" general="S_8031" specific="S_9457"/>
 </packagedElement>
 
@@ -24272,7 +24272,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8873" name="P_5512">
 <!--childof_8873-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8873" name="5512_Sonaranlage_Überwasserschiffe_kombiniert_aktiv/passiv">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8873" name="5512_Sonaranlage_Überwasserschiffe_kombiniert_aktivpassiv">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8873_S_8671" general="S_8671" specific="S_8873"/>
 </packagedElement>
 
@@ -24699,7 +24699,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_12337" name="P_5387">
 <!--childof_12337-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12337" name="5387_Sehrohr/_Sichtgeräte_Bedien_und_Anzeigegeräte">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12337" name="5387_Sehrohr_Sichtgeräte_Bedien_und_Anzeigegeräte">
 <generalization xmi:type="uml:Generalization" xmi:id="S_12337_S_9263" general="S_9263" specific="S_12337"/>
 </packagedElement>
 
@@ -24797,7 +24797,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9784" name="P_5366">
 <!--childof_9784-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9784" name="5366_Ausfahrmast/Einrichtungen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9784" name="5366_AusfahrmastEinrichtungen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_9784_S_12354" general="S_12354" specific="S_9784"/>
 </packagedElement>
 
@@ -24825,7 +24825,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_11397" name="P_5361">
 <!--childof_11397-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11397" name="5361_Empfänger/Senderanlagen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11397" name="5361_EmpfängerSenderanlagen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_11397_S_12354" general="S_12354" specific="S_11397"/>
 </packagedElement>
 
@@ -24888,14 +24888,14 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8100" name="P_5337">
 <!--childof_8100-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8100" name="5337_Antrieb_für_Ausfahrmast/Einrichtungen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8100" name="5337_Antrieb_für_AusfahrmastEinrichtungen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8100_S_9908" general="S_9908" specific="S_8100"/>
 </packagedElement>
 
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8977" name="P_5336">
 <!--childof_8977-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8977" name="5336_Ausfahrmast/Einrichtungen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8977" name="5336_AusfahrmastEinrichtungen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8977_S_9908" general="S_9908" specific="S_8977"/>
 </packagedElement>
 
@@ -24951,14 +24951,14 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10919" name="P_5327">
 <!--childof_10919-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10919" name="5327_Antrieb_für_Ausfahrmast/Einrichtungen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10919" name="5327_Antrieb_für_AusfahrmastEinrichtungen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10919_S_12074" general="S_12074" specific="S_10919"/>
 </packagedElement>
 
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10220" name="P_5326">
 <!--childof_10220-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10220" name="5326_Ausfahrmast/Einrichtungen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10220" name="5326_AusfahrmastEinrichtungen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10220_S_12074" general="S_12074" specific="S_10220"/>
 </packagedElement>
 
@@ -25413,7 +25413,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9036" name="P_5241">
 <!--childof_9036-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9036" name="5241_RadarKenngeräte_Abfragegeräte/Antwort">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9036" name="5241_RadarKenngeräte_AbfragegeräteAntwort">
 <generalization xmi:type="uml:Generalization" xmi:id="S_9036_S_9596" general="S_9596" specific="S_9036"/>
 </packagedElement>
 
@@ -25854,7 +25854,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_12229" name="P_5163">
 <!--childof_12229-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12229" name="5163_MSK_Modulator/_Demudolator">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12229" name="5163_MSK_Modulator_Demudolator">
 <generalization xmi:type="uml:Generalization" xmi:id="S_12229_S_12501" general="S_12501" specific="S_12229"/>
 </packagedElement>
 
@@ -26008,7 +26008,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10169" name="P_5139">
 <!--childof_10169-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10169" name="5139_Funksprechanlagen_SATCOM_INMARSAT/UHF">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10169" name="5139_Funksprechanlagen_SATCOM_INMARSATUHF">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10169_S_9722" general="S_9722" specific="S_10169"/>
 </packagedElement>
 
@@ -26064,7 +26064,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10234" name="P_5131">
 <!--childof_10234-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10234" name="5131_Funkgerätesatz_LF/MF/HF">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10234" name="5131_Funkgerätesatz_LFMFHF">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10234_S_9722" general="S_9722" specific="S_10234"/>
 </packagedElement>
 
@@ -26120,7 +26120,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9120" name="P_5121">
 <!--childof_9120-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9120" name="5121_Funkempfangsanlage_VLF/LF/MF/HF">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9120" name="5121_Funkempfangsanlage_VLFLFMFHF">
 <generalization xmi:type="uml:Generalization" xmi:id="S_9120_S_8981" general="S_8981" specific="S_9120"/>
 </packagedElement>
 
@@ -26169,7 +26169,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10157" name="P_5111">
 <!--childof_10157-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10157" name="5111_Funksendeanlage_VLF/MSK">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10157" name="5111_Funksendeanlage_VLFMSK">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10157_S_7994" general="S_7994" specific="S_10157"/>
 </packagedElement>
 
@@ -26985,7 +26985,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7694" name="P_6786">
 <!--childof_7694-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7694" name="6786_Test/Registriergeräte_Datenbus">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7694" name="6786_TestRegistriergeräte_Datenbus">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7694_S_10158" general="S_10158" specific="S_7694"/>
 </packagedElement>
 
@@ -27181,7 +27181,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_6732" name="P_6726">
 <!--childof_6732-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6732" name="6726_Umschalter/Umsetzer">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6732" name="6726_UmschalterUmsetzer">
 <generalization xmi:type="uml:Generalization" xmi:id="S_6732_S_9531" general="S_9531" specific="S_6732"/>
 </packagedElement>
 
@@ -27202,7 +27202,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9168" name="P_6723">
 <!--childof_9168-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9168" name="6723_Wandler_D/A_A/D_D/D">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9168" name="6723_Wandler_DA_AD_DD">
 <generalization xmi:type="uml:Generalization" xmi:id="S_9168_S_9531" general="S_9531" specific="S_9168"/>
 </packagedElement>
 
@@ -27405,14 +27405,14 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_12383" name="P_6646">
 <!--childof_12383-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12383" name="6646_FüWES_HW/SW_Kabinett">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12383" name="6646_FüWES_HWSW_Kabinett">
 <generalization xmi:type="uml:Generalization" xmi:id="S_12383_S_10024" general="S_10024" specific="S_12383"/>
 </packagedElement>
 
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7518" name="P_6641">
 <!--childof_7518-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7518" name="6641_FüWES_HW/SW_Peripheriegeräte">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7518" name="6641_FüWES_HWSW_Peripheriegeräte">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7518_S_10024" general="S_10024" specific="S_7518"/>
 </packagedElement>
 
@@ -28140,7 +28140,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_11608" name="P_6483">
 <!--childof_11608-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11608" name="6483_Drucker_X/Y_Schreiber_Plotter">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11608" name="6483_Drucker_XY_Schreiber_Plotter">
 <generalization xmi:type="uml:Generalization" xmi:id="S_11608_S_7857" general="S_7857" specific="S_11608"/>
 </packagedElement>
 
@@ -28280,7 +28280,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8514" name="P_6456">
 <!--childof_8514-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8514" name="6456_A/D_Wandler_D/A_Wandler">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8514" name="6456_AD_Wandler_DA_Wandler">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8514_S_8122" general="S_8122" specific="S_8514"/>
 </packagedElement>
 
@@ -28532,7 +28532,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8136" name="P_6383">
 <!--childof_8136-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8136" name="6383_Drucker_X/Y_Schreiber_Plotter">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8136" name="6383_Drucker_XY_Schreiber_Plotter">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8136_S_11501" general="S_11501" specific="S_8136"/>
 </packagedElement>
 
@@ -28672,7 +28672,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8473" name="P_6356">
 <!--childof_8473-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8473" name="6356_A/D_Wandler_D/A_Wandler">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8473" name="6356_AD_Wandler_DA_Wandler">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8473_S_11590" general="S_11590" specific="S_8473"/>
 </packagedElement>
 
@@ -29246,7 +29246,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_6678" name="P_6241">
 <!--childof_6678-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6678" name="6241_Abschussanlagen/Startanlagen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6678" name="6241_AbschussanlagenStartanlagen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_6678_S_7891" general="S_7891" specific="S_6678"/>
 </packagedElement>
 
@@ -32323,7 +32323,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9236" name="P_7242">
 <!--childof_9236-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9236" name="7242_Aufzeichnungs/Registriereinrichtungen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9236" name="7242_AufzeichnungsRegistriereinrichtungen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_9236_S_6803" general="S_6803" specific="S_9236"/>
 </packagedElement>
 
@@ -32456,7 +32456,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8264" name="P_7214">
 <!--childof_8264-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8264" name="7214_Flugkörperübernahme/Abgabeeinrichtungen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8264" name="7214_FlugkörperübernahmeAbgabeeinrichtungen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8264_S_12476" general="S_12476" specific="S_8264"/>
 </packagedElement>
 
@@ -33944,7 +33944,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10349" name="P_8811">
 <!--childof_10349-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10349" name="8811_Scherdrachengeräte_für_MSC/MSD">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10349" name="8811_Scherdrachengeräte_für_MSCMSD">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10349_S_6854" general="S_6854" specific="S_10349"/>
 </packagedElement>
 
@@ -37917,7 +37917,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9513" name="P_9586">
 <!--childof_9513-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9513" name="9586_Schreibfunk/Datenübertragung_und_BÜ_Anlagen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9513" name="9586_SchreibfunkDatenübertragung_und_BÜ_Anlagen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_9513_S_11563" general="S_11563" specific="S_9513"/>
 </packagedElement>
 
@@ -37980,7 +37980,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10425" name="P_9576">
 <!--childof_10425-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10425" name="9576_Schreibfunk/Datenübertragung_und_BÜ_Anlagen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10425" name="9576_SchreibfunkDatenübertragung_und_BÜ_Anlagen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10425_S_11308" general="S_11308" specific="S_10425"/>
 </packagedElement>
 
@@ -38043,7 +38043,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7584" name="P_9566">
 <!--childof_7584-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7584" name="9566_Schreibfunk/Datenübertragung_und_BÜAnlagen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7584" name="9566_SchreibfunkDatenübertragung_und_BÜAnlagen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7584_S_7649" general="S_7649" specific="S_7584"/>
 </packagedElement>
 
@@ -38120,7 +38120,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7959" name="P_9555">
 <!--childof_7959-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7959" name="9555_HöhenwetterMessgeräte/Wettersonde">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7959" name="9555_HöhenwetterMessgeräteWettersonde">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7959_S_7929" general="S_7929" specific="S_7959"/>
 </packagedElement>
 
@@ -38239,14 +38239,14 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_11350" name="P_9537">
 <!--childof_11350-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11350" name="9537_Handgeräte/Magnetkompasse">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11350" name="9537_HandgeräteMagnetkompasse">
 <generalization xmi:type="uml:Generalization" xmi:id="S_11350_S_9390" general="S_9390" specific="S_11350"/>
 </packagedElement>
 
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9024" name="P_9536">
 <!--childof_9024-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9024" name="9536_Ferngläser/Lupen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9024" name="9536_FerngläserLupen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_9024_S_9390" general="S_9390" specific="S_9024"/>
 </packagedElement>
 
@@ -38260,7 +38260,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_6603" name="P_9534">
 <!--childof_6603-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6603" name="9534_Winkelmessgeräte/Sextanten">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6603" name="9534_WinkelmessgeräteSextanten">
 <generalization xmi:type="uml:Generalization" xmi:id="S_6603_S_9390" general="S_9390" specific="S_6603"/>
 </packagedElement>
 
@@ -38316,7 +38316,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7741" name="P_9526">
 <!--childof_7741-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7741" name="9526_Schreibfunk/Datenübertragung_und_BÜ_Anlagen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7741" name="9526_SchreibfunkDatenübertragung_und_BÜ_Anlagen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7741_S_10791" general="S_10791" specific="S_7741"/>
 </packagedElement>
 
@@ -38386,7 +38386,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8798" name="P_9516">
 <!--childof_8798-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8798" name="9516_Schreibfunk/Datenübertragung_und_BÜ_Anlagen">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8798" name="9516_SchreibfunkDatenübertragung_und_BÜ_Anlagen">
 <generalization xmi:type="uml:Generalization" xmi:id="S_8798_S_8788" general="S_8788" specific="S_8798"/>
 </packagedElement>
 
@@ -39233,7 +39233,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_11309" name="P_9387">
 <!--childof_11309-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11309" name="9387_Automation/Integrierte_Leitanlage_Schiffstechnik">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11309" name="9387_AutomationIntegrierte_Leitanlage_Schiffstechnik">
 <generalization xmi:type="uml:Generalization" xmi:id="S_11309_S_12282" general="S_12282" specific="S_11309"/>
 </packagedElement>
 
@@ -39303,7 +39303,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_12267" name="P_9377">
 <!--childof_12267-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12267" name="9377_Automation/Integrierte_Leitanlage_Schiffstechnik">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12267" name="9377_AutomationIntegrierte_Leitanlage_Schiffstechnik">
 <generalization xmi:type="uml:Generalization" xmi:id="S_12267_S_8757" general="S_8757" specific="S_12267"/>
 </packagedElement>
 
@@ -39373,7 +39373,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10318" name="P_9367">
 <!--childof_10318-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10318" name="9367_Automation/Integrierte_Leitanlage_Schiffstechnik">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10318" name="9367_AutomationIntegrierte_Leitanlage_Schiffstechnik">
 <generalization xmi:type="uml:Generalization" xmi:id="S_10318_S_11276" general="S_11276" specific="S_10318"/>
 </packagedElement>
 
@@ -39443,7 +39443,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7452" name="P_9327">
 <!--childof_7452-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7452" name="9327_Automation/Integrierte_Leitanlage_Schiffstechnik">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7452" name="9327_AutomationIntegrierte_Leitanlage_Schiffstechnik">
 <generalization xmi:type="uml:Generalization" xmi:id="S_7452_S_11827" general="S_11827" specific="S_7452"/>
 </packagedElement>
 
@@ -39457,7 +39457,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9562" name="P_9325">
 <!--childof_9562-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9562" name="9325_Automation/Integrierte_Leitanlage_Schiffstechnik">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9562" name="9325_AutomationIntegrierte_Leitanlage_Schiffstechnik">
 <generalization xmi:type="uml:Generalization" xmi:id="S_9562_S_11827" general="S_11827" specific="S_9562"/>
 </packagedElement>
 
@@ -39513,7 +39513,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_6798" name="P_9317">
 <!--childof_6798-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6798" name="9317_Automation/Integrierte_Leitanlage_Schiffstechnik">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_6798" name="9317_AutomationIntegrierte_Leitanlage_Schiffstechnik">
 <generalization xmi:type="uml:Generalization" xmi:id="S_6798_S_11402" general="S_11402" specific="S_6798"/>
 </packagedElement>
 
@@ -40388,7 +40388,7 @@
 <packagedElement xmi:type="uml:Profile" xmi:id="P_11396" name="P_9157">
 <!--childof_11396-->
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11396" name="9157_Ballast_für_Massenausgleich/Verbrauch">
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11396" name="9157_Ballast_für_MassenausgleichVerbrauch">
 <generalization xmi:type="uml:Generalization" xmi:id="S_11396_S_9154" general="S_9154" specific="S_11396"/>
 </packagedElement>
 
