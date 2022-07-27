@@ -43,7 +43,7 @@ while(<FH1>){
 		
 	if ($parent eq ""){
 		open(FW, '>>', "rhp_import.xmi") or die $!;
-		my $package_xml = "<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P_" . $id  . "\" name=\"P_" . $bg_no . "\">";
+		my $package_xml = "<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P_" . $id  . "\" name=\"_" . $bg_no . "\">";
 		my $insert = "<!--childof_" . $id . "-->\n";
 		my $stereotype_xml = "<packagedElement xmi:type=\"uml:Stereotype\" xmi:id=\"S_" . $id  . "\" name=\"" . $st_text . "\"\/>";
 		my $package_end = "</packagedElement>\n";
@@ -62,7 +62,11 @@ while(<FH1>){
 		open(OUT, '>', $file) or die $!;
 		my $str_parent = "<!--childof_" . $parent . "-->";
 		my $str_child = $str_parent . "\n";
-		my $package_xml_child = "<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P_" . $id  . "\" name=\"P_" . $bg_no . "\">\n";
+
+		my $indent = find_child_level($bg_no);
+		my $package_name = $indent . $bg_no;
+		
+		my $package_xml_child = "<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P_" . $id  . "\" name=\"_" . $package_name . "\">\n";
 		my $insert_child = "<!--childof_" . $id . "-->\n";
 		my $stereotype_xml_child = "<packagedElement xmi:type=\"uml:Stereotype\" xmi:id=\"S_" . $id  . "\" name=\"" . $st_text . "\">\n";
 		my $gen_child = "<generalization xmi:type=\"uml:Generalization\" xmi:id=\"S_" . $id . "_S_" . $parent . "\" general=\"S_" . $parent . "\" specific=\"S_". $id . "\"/>\n"; 
@@ -86,5 +90,23 @@ print FI "<\/packagedElement><\/uml:Model><\/xmi:XMI>\n";
 close(FI);
 close(FH1);
 close(FH1);
+
+
+sub find_child_level {
+	my $bg_no_to_check = $_[0];
+	my $level = "";
+	my $a1 = substr($bg_no_to_check, 0, 1);
+	my $a2 = substr($bg_no_to_check, 1, 1);
+	my $a3 = substr($bg_no_to_check, 2, 1);
+	my $a4 = substr($bg_no_to_check, 3, 1);
+	
+	if ($a4 != 0) {$level = "___";}
+	elsif($a3 != 0){$level = "__" ;}
+	elsif($a2 != 0){$level = "_" ;}
+	else{$level= "NA";}
+	if ($level ne "NA") {return $level;}
+	else {}
+}
+
 
 
