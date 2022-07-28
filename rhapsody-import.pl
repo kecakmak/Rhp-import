@@ -20,6 +20,9 @@ while(<IN>){
 	$_=~s/ /_/ig;
 	$_=~s/-//ig;
 	$_=~s/_,/_/ig;
+	$_=~s/ ,/_/ig;	
+	$_=~s/, /_/ig;
+	$_=~s/,\(/_/ig;	
 	$_=~s/,_/_/ig;
 	$_=~s/\"//ig;
 	$_=~s/\(//ig;
@@ -34,6 +37,9 @@ close(OUT);
 # Now lets open the sanitized exported file to read line by line
 open(FH1, '<', $file) or die $!;
 
+my $is_my_parent_grand = "false";
+my $grand_parent_no = "";
+
 
 while(<FH1>){
 	chomp($_);
@@ -47,6 +53,7 @@ while(<FH1>){
 		my $insert = "<!--childof_" . $id . "-->\n";
 		my $stereotype_xml = "<packagedElement xmi:type=\"uml:Stereotype\" xmi:id=\"S_" . $id  . "\" name=\"" . $st_text . "\"\/>";
 		my $package_end = "</packagedElement>\n";
+		$grand_parent_no = $id;
 		print FW $package_xml;
 		print FW "\n";
 		print FW $insert;
@@ -63,14 +70,19 @@ while(<FH1>){
 		my $str_parent = "<!--childof_" . $parent . "-->";
 		my $str_child = $str_parent . "\n";
 
-		my $indent = find_child_level($bg_no);
+		my $indent = find_child_level($bg_no, $parent, $is_my_parent_grand, $grand_parent_no);
 		my $package_name = $indent . $bg_no;
+		my $package_xml_child = "";
+		my $insert_child = "";
+		my $package_end_child = "";
 		
-		my $package_xml_child = "<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P_" . $id  . "\" name=\"_" . $package_name . "\">\n";
-		my $insert_child = "<!--childof_" . $id . "-->\n";
+		if ($indent ne "___") {
+			$package_xml_child = "<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P_" . $id  . "\" name=\"_" . $package_name . "\">\n";
+			$insert_child = "<!--childof_" . $id . "-->\n";
+			$package_end_child = "</packagedElement>\n";
+		}
 		my $stereotype_xml_child = "<packagedElement xmi:type=\"uml:Stereotype\" xmi:id=\"S_" . $id  . "\" name=\"" . $st_text . "\">\n";
 		my $gen_child = "<generalization xmi:type=\"uml:Generalization\" xmi:id=\"S_" . $id . "_S_" . $parent . "\" general=\"S_" . $parent . "\" specific=\"S_". $id . "\"/>\n"; 
-		my $package_end_child = "</packagedElement>\n";
 		$str_child = $str_child . $package_xml_child . $insert_child . $package_end_child . $stereotype_xml_child . $gen_child . $package_end_child; 
 		while(<IN>){
 			$_=~s/$str_parent/$str_child/ig;
@@ -93,20 +105,34 @@ close(FH1);
 
 
 sub find_child_level {
-	my $bg_no_to_check = $_[0];
+	my $id_to_check = $_[0];
+	my $parent_to_check = $_[1];
+	my $is_parent = $_[2];
+	my $g_parent_no = $_[3];
 	my $level = "";
-	my $a1 = substr($bg_no_to_check, 0, 1);
-	my $a2 = substr($bg_no_to_check, 1, 1);
-	my $a3 = substr($bg_no_to_check, 2, 1);
-	my $a4 = substr($bg_no_to_check, 3, 1);
+	my $a1 = substr($id_to_check, 0, 1);
+	my $a2 = substr($id_to_check, 1, 1);
+	my $a3 = substr($id_to_check, 2, 1);
+	my $a4 = substr($id_to_check, 3, 1);
 	
 	if ($a4 != 0) {$level = "___";}
 	elsif($a3 != 0){$level = "__" ;}
 	elsif($a2 != 0){$level = "_" ;}
 	else{$level= "NA";}
 	if ($level ne "NA") {return $level;}
-	else {}
+	else {
+		if ($g_parent_no eq	$parent_to_check) {
+			$level = "_";
+		}
+		else {$level = "__";}
+		return $level;
+#		return "NA";
+		}
 }
+
+
+	
+
 
 
 
