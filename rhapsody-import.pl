@@ -74,16 +74,19 @@ while(<FH1>){
 		my $package_name = $indent . $bg_no;
 		my $package_xml_child = "";
 		my $insert_child = "";
-		my $package_end_child = "";
+		my $package_end_child = "</packagedElement>\n";
+		my $stereotype_xml_child = "<packagedElement xmi:type=\"uml:Stereotype\" xmi:id=\"S_" . $id  . "\" name=\"" . $st_text . "\">\n";
+		my $gen_child = "<generalization xmi:type=\"uml:Generalization\" xmi:id=\"S_" . $id . "_S_" . $parent . "\" general=\"S_" . $parent . "\" specific=\"S_". $id . "\"/>\n"; 
+
 		
 		if ($indent ne "___") {
 			$package_xml_child = "<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P_" . $id  . "\" name=\"_" . $package_name . "\">\n";
 			$insert_child = "<!--childof_" . $id . "-->\n";
-			$package_end_child = "</packagedElement>\n";
+			$str_child = $str_child . $package_xml_child . $insert_child . $package_end_child . $stereotype_xml_child . $gen_child . $package_end_child; 
 		}
-		my $stereotype_xml_child = "<packagedElement xmi:type=\"uml:Stereotype\" xmi:id=\"S_" . $id  . "\" name=\"" . $st_text . "\">\n";
-		my $gen_child = "<generalization xmi:type=\"uml:Generalization\" xmi:id=\"S_" . $id . "_S_" . $parent . "\" general=\"S_" . $parent . "\" specific=\"S_". $id . "\"/>\n"; 
-		$str_child = $str_child . $package_xml_child . $insert_child . $package_end_child . $stereotype_xml_child . $gen_child . $package_end_child; 
+		else {
+			$str_child = $str_child . $stereotype_xml_child . $gen_child . $package_end_child; 			
+		}
 		while(<IN>){
 			$_=~s/$str_parent/$str_child/ig;
 			print OUT $_; 
