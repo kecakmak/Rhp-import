@@ -552,7 +552,7 @@ Baugruppennummer,Primary_Text,id,isHeading,parentBinding,module,Artifact_Type
 0897,Vorrichtungen_usw._für_Geräte_Werkzeuge_Ersatzteile_für_Waffenanlagen,7795,false,11282,12505,Baugruppe
 0898,Vorrichtungen_usw._für_Geräte_Werkzeuge_Ersatzteile_für_Sperrwaffenanlagen,8010,false,11282,12505,Baugruppe
 0899,Vorrichtungen_usw._für_Geräte_Werkzeuge_Werkzeugmaschinen_und_Ersatzteile_für_Elektrische_Anlagen,12399,false,11282,12505,Baugruppe
-0900,Betriebsangelegenheiten_für_alle_Hauptbauabschnitte,6760,false,11790,12505,Baugruppe
+0900,Betriebsangelegenheiten_für_alle_Hauptbauabschnitte,,6760,false,11790,12505,Baugruppe
 0900,Übersicht_und_Allgemeines,7439,false,6760,12505,Baugruppe
 0901,Verträge,8185,false,7439,12505,Baugruppe
 0902,Management,10559,false,7439,12505,Baugruppe
@@ -2017,7 +2017,7 @@ Baugruppennummer,Primary_Text,id,isHeading,parentBinding,module,Artifact_Type
 3012,Unternetze,8092,false,6622,12505,Baugruppe
 3013,Ersatzstromnetz,7493,false,6622,12505,Baugruppe
 3014,Notstromversorgung,6791,false,6622,12505,Baugruppe
-3015,Sondernetze_MES_MIRGA,8922,false,6622,12505,Baugruppe
+3015,Sondernetze_MES,MIRGA,8922,false,6622,12505,Baugruppe
 3016,LandBordBordBord_Stromversorgung,6749,false,6622,12505,Baugruppe
 3020,Leit_Überw._Warn_und_Alarmanlagen,9534,false,7687,12505,Baugruppe
 3021,Integrierte_Leitanlage_Schiffstechnik,8727,false,9534,12505,Baugruppe
@@ -2422,7 +2422,7 @@ Baugruppennummer,Primary_Text,id,isHeading,parentBinding,module,Artifact_Type
 3736,Meldetableau,8846,false,9759,12505,Baugruppe
 3737,Großdisplay,12068,false,9759,12505,Baugruppe
 3738,Tragbare_Bedienstation,6766,false,9759,12505,Baugruppe
-3739,Rechner_Einsatzsystem,8964,false,9759,12505,Baugruppe
+3739,Rechner_Einsatzsystem_8964,false,9759,12505,Baugruppe
 3740,Steuerstände,10279,false,10025,12505,Baugruppe
 3741,Steuerstand_Brücke,12243,false,10279,12505,Baugruppe
 3742,BdW_Pult,11528,false,10279,12505,Baugruppe
@@ -3694,9 +3694,9 @@ Baugruppennummer,Primary_Text,id,isHeading,parentBinding,module,Artifact_Type
 5710MT,Anlage_zur_taktischen_Meldung,7082,false,8804,12505,Baugruppe
 5710ME,Anlage_zur_EloKafachlichen_Meldung,8471,false,8804,12505,Baugruppe
 5710P,Zentrales_Auftragsmanagement,11813,false,10560,12505,Baugruppe
-5710A,Erfassungssystem_ACINT,7949,false,10560,12505,Baugruppe
+5710A,Erfassungssystem_ACINT_7949,false,10560,12505,Baugruppe
 5710F,Anlage_zur_Führung_der_Aufklärungslage,8005,false,10560,12505,Baugruppe
-5710O,Erfassungssystem_OPTRINT,8132,false,10560,12505,Baugruppe
+5710O,Erfassungssystem_OPTRINT_8132,false,10560,12505,Baugruppe
 5710S,Erfassungssystem_SIGINT,12365,false,10560,12505,Baugruppe
 5710SC,Erfassungssystem_COMINT,9742,false,12365,12505,Baugruppe
 5710SE,Erfassungssystem_ELINT,8937,false,12365,12505,Baugruppe
@@ -5941,3 +5941,4 @@ Baugruppennummer,Primary_Text,id,isHeading,parentBinding,module,Artifact_Type
 9997,Halterungen,11639,false,10725,12505,Baugruppe
 9998,Ein_und_Ausbauvorrichtungen,7657,false,10725,12505,Baugruppe
 9999,Ein_und_Ausbau_an_Bord,10780,false,10725,12505,Baugruppe
+
