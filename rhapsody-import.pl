@@ -52,9 +52,9 @@ while(<FH1>){
 		my $package_xml = "<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P_" . $id  . "\" name=\"_" . $bg_no . "\">";
 		my $insert = "<!--childof_" . $id . "-->\n";
 		my $stereotype_xml = "<packagedElement xmi:type=\"uml:Stereotype\" xmi:id=\"S_" . $id  . "\" name=\"" . $st_text . "\">";
-		my $tag = "<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"\ name=\"Systemebene\" visibility=\"public\">
+		my $tag_insert = "<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"t_" . $id . "\"  name=\"Systemebene\" visibility=\"public\">
           <type xmi:type=\"uml:PrimitiveType\" href=\"http:\/\/schema.omg.org\/spec\/UML\/2.1\/uml.xml\#String\"\/>
-          <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"\" value=\"Hauptbauabschnitt\"\/>
+          <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"tv_" . $id . "\" value=\"Hauptbauabschnitt\"\/>
         <\/ownedAttribute>"; 
 		my $package_end = "</packagedElement>\n";
 		$grand_parent_no = $id;
@@ -63,7 +63,7 @@ while(<FH1>){
 		print FW $insert;
 		print FW $package_end;
 		print FW $stereotype_xml;
-		print FW $tag;
+		print FW $tag_insert;
 		print FW $package_end;
 		print FW "\n";
 		close(FW);
@@ -77,21 +77,25 @@ while(<FH1>){
 		my $str_child = $str_parent . "\n";
 
 		my $indent = find_child_level($bg_no, $parent, $is_my_parent_grand, $grand_parent_no);
+		my $systemebene_value = level_value($indent);
 		my $package_name = $indent . $bg_no;
 		my $package_xml_child = "";
 		my $insert_child = "";
 		my $package_end_child = "</packagedElement>\n";
 		my $stereotype_xml_child = "<packagedElement xmi:type=\"uml:Stereotype\" xmi:id=\"S_" . $id  . "\" name=\"" . $st_text . "\">\n";
 		my $gen_child = "<generalization xmi:type=\"uml:Generalization\" xmi:id=\"S_" . $id . "_S_" . $parent . "\" general=\"S_" . $parent . "\" specific=\"S_". $id . "\"/>\n"; 
-
+		my $tag_insert = "<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"t_" . $id . "\"  name=\"Systemebene\" visibility=\"public\">
+          <type xmi:type=\"uml:PrimitiveType\" href=\"http:\/\/schema.omg.org\/spec\/UML\/2.1\/uml.xml\#String\"\/>
+          <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"tv_" . $id . "\" value=\"" . $systemebene_value . "\"\/>
+        <\/ownedAttribute>"; 
 		
 		if ($indent ne "___") {
 			$package_xml_child = "<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P_" . $id  . "\" name=\"_" . $package_name . "\">\n";
 			$insert_child = "<!--childof_" . $id . "-->\n";
-			$str_child = $str_child . $package_xml_child . $insert_child . $package_end_child . $stereotype_xml_child . $gen_child . $package_end_child; 
+			$str_child = $str_child . $package_xml_child . $insert_child . $package_end_child . $stereotype_xml_child . $gen_child . $tag_insert . $package_end_child; 
 		}
 		else {
-			$str_child = $str_child . $stereotype_xml_child . $gen_child . $package_end_child; 			
+			$str_child = $str_child . $stereotype_xml_child . $gen_child . $tag_insert . $package_end_child; 			
 		}
 		while(<IN>){
 			$_=~s/$str_parent/$str_child/ig;
@@ -136,6 +140,17 @@ sub find_child_level {
 		else {$level = "__";}
 		return $level;
 		}
+}
+
+sub level_value {
+	my $level = $_[0];
+	my $system_level;
+	
+	if ($level eq "_"){$system_level = "Bauabschnitt";}
+	elsif ($level eq "__"){$system_level = "Hauptbaugruppe";}
+	else {$system_level = "Baugruppe";}
+	
+	return $system_level;
 }
 
 
