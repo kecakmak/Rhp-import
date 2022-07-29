@@ -2,14 +2,22 @@
 use warnings;
 use strict;
 
+# This file is a perl script to convert a csv file into an xmi format so that IBM Rhapsody can read and import that via the XMI Toolkit. 
+
+# This part is to create the xmi file and insert the constant headers if the XMI file
 open(FI, '>', "rhp_import.xmi") or die $!;
 print FI "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 print FI "<xmi:XMI xmi:version=\"2.1\" xmlns:xmi=\"http:\/\/schema.omg.org\/spec\/XMI\/2.1\" xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" xmlns:CG=\"http:\/\/RhapsodyStandardModel.RhpProperties\/schemas/CG\/_Js860AdAEe20L6GhnqQRdw\/0\" xmlns:RHP=\"http:\/\/RhapsodyStandardModel.RhpProperties\/schemas/RHP\/_Js860QdAEe20L6GhnqQRdw\/0\" xmlns:RhapsodyProfile=\"http:\/\/RhapsodyStandardModel\/schemas\/RhapsodyProfile\/_Js8TwAdAEe20L6GhnqQRdw\/0\" xmlns:ecore=\"http:\/\/www.eclipse.org\/emf\/2002/Ecore\" xmlns:uml=\"http:\/\/www.omg.org\/spec\/UML\/20090901\" xsi:schemaLocation=\"http:\/\/RhapsodyStandardModel.RhpProperties\/schemas\/CG\/_Js860AdAEe20L6GhnqQRdw\/0 #GUID+RhpProperties_Package_packagedElement_2148_eAnnotations_0_contents_0 http:\/\/RhapsodyStandardModel.RhpProperties\/schemas\/RHP\/_Js860QdAEe20L6GhnqQRdw\/0 #GUID+RhpProperties_Package_packagedElement_81114_eAnnotations_0_contents_0 http:\/\/RhapsodyStandardModel\/schemas\/RhapsodyProfile\/_Js8TwAdAEe20L6GhnqQRdw\/0 #GUID_ROOT_Model_packagedElement_1799671379_eAnnotations_0_contents_0 http:\/\/www.omg.org\/spec\/UML\/20090901 http:\/\/www.eclipse.org\/uml2\/2.0.0\/UML\">\n<uml:Model name=\"NAL\">\n<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P01\" name=\"Prototype_Structure\">\n";
 close (FI);
 
+# export_dng.csv file is the exported file from the DNG Module view. Please refer to the document: "Bulk Import of DNG Module Artifacts into Rhapsody" 
+# for details of how to export DNG Module 
+# IMPORTANT NOTE: Please do not forget to delete the final part of this file starting with "METADATA" till the end. Do not leave new line characters at the end.
 my $file = "export_dng.csv";
 
-## First lets get rid of commas, and other unwanted characters within the text and sanitize the module export file
+## We need to trim some characters. Because they would not be accepted by Rhapsody import. Also we need clean comma sepereated values there should be no 
+# commas within the text of the artifact. 
+
 rename($file, $file . '.bak');
 open(IN, '<', $file . '.bak') or die $!;
 open(OUT, '>', $file) or die $!;
@@ -34,7 +42,7 @@ while(<IN>){
 close(IN);
 close(OUT);
 
-# Now lets open the sanitized exported file to read line by line
+# Now lets open the trimmed exported file to read line by line
 open(FH1, '<', $file) or die $!;
 
 my $is_my_parent_grand = "false";
@@ -48,6 +56,7 @@ while(<FH1>){
 	
 		
 	if ($parent eq ""){
+# this is the first level (0000s 1000s 2000s etc) 
 		open(FW, '>>', "rhp_import.xmi") or die $!;
 		my $package_xml = "<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P_" . $id  . "\" name=\"_" . $bg_no . "\">";
 		my $insert = "<!--childof_" . $id . "-->\n";
@@ -127,10 +136,11 @@ sub find_child_level {
 	my $a2 = substr($id_to_check, 1, 1);
 	my $a3 = substr($id_to_check, 2, 1);
 	my $a4 = substr($id_to_check, 3, 1);
+
 	
 	if ($a4 != 0) {$level = "___";}
 	elsif($a3 != 0){$level = "__" ;}
-	elsif($a2 != 0){$level = "_" ;}
+#	elsif($a2 != 0){$level = "_" ;}
 	else{$level= "NA";}
 	if ($level ne "NA") {return $level;}
 	else {
