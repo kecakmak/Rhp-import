@@ -2860,7 +2860,11 @@
 </packagedElement>
 
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11790" name="0000_Richtlinien_und_Leistungen_für_Planung_Bau_und_Nutzung"/>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11790" name="0000_Richtlinien_und_Leistungen_für_Planung_Bau_und_Nutzung"><ownedAttribute xmi:type="uml:Property" xmi:id=" name="Systemebene" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="" value="Hauptbauabschnitt"/>
+        </ownedAttribute></packagedElement>
+
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7769" name="_1000">
 <!--childof_7769-->
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8520" name="__1900">
@@ -4314,6 +4318,45 @@
 </packagedElement>
 <packagedElement xmi:type="uml:Stereotype" xmi:id="S_12309" name="1590_Vorrichtungen_für_Eigenschutz">
 <generalization xmi:type="uml:Generalization" xmi:id="S_12309_S_9652" general="S_9652" specific="S_12309"/>
+</packagedElement>
+
+<packagedElement xmi:type="uml:Profile" xmi:id="P_12386" name="___1580">
+<!--childof_12386-->
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10935" name="1588_Bes._Einrichtung_für_Sperrwaffenanlagen">
+<generalization xmi:type="uml:Generalization" xmi:id="S_10935_S_12386" general="S_12386" specific="S_10935"/>
+</packagedElement>
+
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11513" name="1587_Unterbringung_und_Lager_der_Mun._Versenkst._und_Zerst._Lad.">
+<generalization xmi:type="uml:Generalization" xmi:id="S_11513_S_12386" general="S_12386" specific="S_11513"/>
+</packagedElement>
+
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10005" name="1586_Unterbringung_und_Lager_der_Sprengmunition_und_Kapseln">
+<generalization xmi:type="uml:Generalization" xmi:id="S_10005_S_12386" general="S_12386" specific="S_10005"/>
+</packagedElement>
+
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11064" name="1585_Unterbringung_der_Minen_und_Wasserbomben">
+<generalization xmi:type="uml:Generalization" xmi:id="S_11064_S_12386" general="S_12386" specific="S_11064"/>
+</packagedElement>
+
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12192" name="1584_Einrichtung_für_SeeKleinkampfmittel_Netz_und_Balkensperren">
+<generalization xmi:type="uml:Generalization" xmi:id="S_12192_S_12386" general="S_12386" specific="S_12192"/>
+</packagedElement>
+
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10934" name="1583_Einrichtungen_zum_Minenräumen">
+<generalization xmi:type="uml:Generalization" xmi:id="S_10934_S_12386" general="S_12386" specific="S_10934"/>
+</packagedElement>
+
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8401" name="1582_Unterbauten_für_Minensuch_und_Ortungseinrichtung_sowie_Bezeichn._Bojen">
+<generalization xmi:type="uml:Generalization" xmi:id="S_8401_S_12386" general="S_12386" specific="S_8401"/>
+</packagedElement>
+
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8460" name="1581_Unterbauten_für_Minen_und_Sperrschutzmitteleinricht.">
+<generalization xmi:type="uml:Generalization" xmi:id="S_8460_S_12386" general="S_12386" specific="S_8460"/>
+</packagedElement>
+
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_12386" name="1580_Unterb._Plattformen_schiffb._Einbauten_und_Einrichtung_für_Sperr_waffenAnlage">
+<generalization xmi:type="uml:Generalization" xmi:id="S_12386_S_9652" general="S_9652" specific="S_12386"/>
 </packagedElement>
 
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9505" name="___1570">
@@ -6233,7 +6276,11 @@
 </packagedElement>
 
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7769" name="1000_Schiff_mit_Ausrüstung_und_Einrichtung__Übersicht"/>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_7769" name="1000_Schiff_mit_Ausrüstung_und_Einrichtung__Übersicht"><ownedAttribute xmi:type="uml:Property" xmi:id=" name="Systemebene" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="" value="Hauptbauabschnitt"/>
+        </ownedAttribute></packagedElement>
+
 <packagedElement xmi:type="uml:Profile" xmi:id="P_11089" name="_2000">
 <!--childof_11089-->
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8736" name="__2900">
@@ -8860,7 +8907,11 @@
 </packagedElement>
 
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11089" name="2000_Antriebsanlagen"/>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_11089" name="2000_Antriebsanlagen"><ownedAttribute xmi:type="uml:Property" xmi:id=" name="Systemebene" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="" value="Hauptbauabschnitt"/>
+        </ownedAttribute></packagedElement>
+
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10551" name="_3000">
 <!--childof_10551-->
 <packagedElement xmi:type="uml:Profile" xmi:id="P_11024" name="__3900">
@@ -11300,7 +11351,11 @@
 </packagedElement>
 
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10551" name="3000_EAnlagen__Übersicht"/>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10551" name="3000_EAnlagen__Übersicht"><ownedAttribute xmi:type="uml:Property" xmi:id=" name="Systemebene" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="" value="Hauptbauabschnitt"/>
+        </ownedAttribute></packagedElement>
+
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9003" name="_4000">
 <!--childof_9003-->
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9380" name="__4900">
@@ -14370,7 +14425,11 @@
 </packagedElement>
 
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9003" name="4000_Schiffsbetriebsanlagen__Übersicht"/>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9003" name="4000_Schiffsbetriebsanlagen__Übersicht"><ownedAttribute xmi:type="uml:Property" xmi:id=" name="Systemebene" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="" value="Hauptbauabschnitt"/>
+        </ownedAttribute></packagedElement>
+
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9508" name="_5000">
 <!--childof_9508-->
 <packagedElement xmi:type="uml:Profile" xmi:id="P_12269" name="__5900">
@@ -17210,7 +17269,11 @@
 </packagedElement>
 
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9508" name="5000_Fernmelde_Navigations_Ortungs_und_EloKa_Anlagen"/>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9508" name="5000_Fernmelde_Navigations_Ortungs_und_EloKa_Anlagen"><ownedAttribute xmi:type="uml:Property" xmi:id=" name="Systemebene" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="" value="Hauptbauabschnitt"/>
+        </ownedAttribute></packagedElement>
+
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9548" name="_6000">
 <!--childof_9548-->
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8280" name="__6900">
@@ -19745,7 +19808,11 @@
 </packagedElement>
 
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9548" name="6000_Führungs_und_Waffeneinsatzsysteme__Übersicht"/>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_9548" name="6000_Führungs_und_Waffeneinsatzsysteme__Übersicht"><ownedAttribute xmi:type="uml:Property" xmi:id=" name="Systemebene" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="" value="Hauptbauabschnitt"/>
+        </ownedAttribute></packagedElement>
+
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10570" name="_7000">
 <!--childof_10570-->
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8644" name="___7710">
@@ -21673,7 +21740,11 @@
 </packagedElement>
 
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10570" name="7000_Waffenanlagen__Übersicht"/>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10570" name="7000_Waffenanlagen__Übersicht"><ownedAttribute xmi:type="uml:Property" xmi:id=" name="Systemebene" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="" value="Hauptbauabschnitt"/>
+        </ownedAttribute></packagedElement>
+
 <packagedElement xmi:type="uml:Profile" xmi:id="P_8435" name="_8000">
 <!--childof_8435-->
 <packagedElement xmi:type="uml:Profile" xmi:id="P_9819" name="__8900">
@@ -23550,7 +23621,11 @@
 </packagedElement>
 
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8435" name="8000_SperrwaffenAnlagen__Übersicht"/>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_8435" name="8000_SperrwaffenAnlagen__Übersicht"><ownedAttribute xmi:type="uml:Property" xmi:id=" name="Systemebene" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="" value="Hauptbauabschnitt"/>
+        </ownedAttribute></packagedElement>
+
 <packagedElement xmi:type="uml:Profile" xmi:id="P_10308" name="_9000">
 <!--childof_10308-->
 <packagedElement xmi:type="uml:Profile" xmi:id="P_7946" name="__9900">
@@ -26559,5 +26634,9 @@
 </packagedElement>
 
 </packagedElement>
-<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10308" name="9000_Geräte_Werkzeuge_Ersatzteile_Technische_Unterlagen_Werkzeugmaschinen_Übersicht"/>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="S_10308" name="9000_Geräte_Werkzeuge_Ersatzteile_Technische_Unterlagen_Werkzeugmaschinen_Übersicht"><ownedAttribute xmi:type="uml:Property" xmi:id=" name="Systemebene" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="" value="Hauptbauabschnitt"/>
+        </ownedAttribute></packagedElement>
+
 </packagedElement></uml:Model></xmi:XMI>

@@ -51,7 +51,11 @@ while(<FH1>){
 		open(FW, '>>', "rhp_import.xmi") or die $!;
 		my $package_xml = "<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P_" . $id  . "\" name=\"_" . $bg_no . "\">";
 		my $insert = "<!--childof_" . $id . "-->\n";
-		my $stereotype_xml = "<packagedElement xmi:type=\"uml:Stereotype\" xmi:id=\"S_" . $id  . "\" name=\"" . $st_text . "\"\/>";
+		my $stereotype_xml = "<packagedElement xmi:type=\"uml:Stereotype\" xmi:id=\"S_" . $id  . "\" name=\"" . $st_text . "\">";
+		my $tag = "<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"\ name=\"Systemebene\" visibility=\"public\">
+          <type xmi:type=\"uml:PrimitiveType\" href=\"http:\/\/schema.omg.org\/spec\/UML\/2.1\/uml.xml\#String\"\/>
+          <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"\" value=\"Hauptbauabschnitt\"\/>
+        <\/ownedAttribute>"; 
 		my $package_end = "</packagedElement>\n";
 		$grand_parent_no = $id;
 		print FW $package_xml;
@@ -59,6 +63,8 @@ while(<FH1>){
 		print FW $insert;
 		print FW $package_end;
 		print FW $stereotype_xml;
+		print FW $tag;
+		print FW $package_end;
 		print FW "\n";
 		close(FW);
 	}
