@@ -108,18 +108,27 @@ while(<FH1>){
 		my $insert_child = "";
 		my $package_end_child = "</packagedElement>\n";
 		my $stereotype_xml_child = "<packagedElement xmi:type=\"uml:Stereotype\" xmi:id=\"S_" . $id  . "\" name=\"" . $st_text . "\">\n";
-		my $gen_child = "<generalization xmi:type=\"uml:Generalization\" xmi:id=\"S_" . $id . "_S_" . $parent . "\" general=\"S_" . $parent . "\" specific=\"S_". $id . "\"/>\n"; 
-		my $tag_insert = "<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"t_" . $grand_parent_no . "\"  name=\"Systemebene\" source=\"redefines\" visibility=\"public\" type=\"GUID+5069770d-2b99-423e-813f-13ce5dc427c4\">
+# Below line is for generalizaton between stereotypes
+#		my $gen_child = "<generalization xmi:type=\"uml:Generalization\" xmi:id=\"S_" . $id . "_S_" . $parent . "\" general=\"S_" . $parent . "\" specific=\"S_". $id . "\"/>\n"; 
+# Below line is for Dependency between stereotypes 
+		my $gen_child = "<packagedElement xmi:type=\"uml:Dependency\" xmi:id=\"S_" . $id . "_S_" . $parent . "\" name=\"S_" . $parent . "\" supplier=\"S_" . $parent . "\" client=\"S_" . $id ."\"/>";
+		my $tag_insert = "<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"t_" . $grand_parent_no . "\"  name=\"Systemebene\" source=\"redefines\" visibility=\"public\" type=\"5069770d-2b99-423e-813f-13ce5dc427c4\">
           <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"tv_" . $id . "\" value=\"" . $systemebene_value . "\"\/>
         <\/ownedAttribute>"; 
 		
 		if ($indent ne "___") {
 			$package_xml_child = "<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P_" . $id  . "\" name=\"_" . $package_name . "\">\n";
 			$insert_child = "<!--childof_" . $id . "-->\n";
-			$str_child = $str_child . $package_xml_child . $insert_child . $package_end_child . $stereotype_xml_child . $gen_child . $tag_insert . $package_end_child; 
+# Below line is for Generalization between stereotypes 
+#			$str_child = $str_child . $package_xml_child . $insert_child . $package_end_child . $stereotype_xml_child . $gen_child . $tag_insert . $package_end_child; 
+# Below line is for Dependency between stereotypes 
+			$str_child = $str_child . $package_xml_child . $insert_child . $package_end_child . $stereotype_xml_child . $tag_insert . $package_end_child . $gen_child; 
 		}
 		else {
-			$str_child = $str_child . $stereotype_xml_child . $gen_child . $tag_insert . $package_end_child; 			
+# Below line is for Generalization between stereotypes 
+#			$str_child = $str_child . $stereotype_xml_child . $gen_child . $tag_insert . $package_end_child; 		
+# Below line is for Dependency between stereotypes 			
+			$str_child = $str_child . $stereotype_xml_child . $tag_insert . $package_end_child . $gen_child; 			
 		}
 		while(<IN>){
 			$_=~s/$str_parent/$str_child/ig;
