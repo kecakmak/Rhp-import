@@ -1,0 +1,4 @@
+Baugruppennummer,Primary_Text,id,isHeading,parentBinding,module,Artifact_Type
+0000,Richtlinien_und_Leistungen_für_Planung_Bau_und_Nutzung,11790,false,,12505,Baugruppe
+0000,Grundsätze_der_Bauabwicklung,7210,false,11790,12505,Baugruppe
+0000,Technische_Vorschriften_für_BauArbeitssicherheit,10460,false,7210,12505,Baugruppe

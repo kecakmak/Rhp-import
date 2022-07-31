@@ -7,7 +7,24 @@ use strict;
 # This part is to create the xmi file and insert the constant headers if the XMI file
 open(FI, '>', "rhp_import.xmi") or die $!;
 print FI "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
-print FI "<xmi:XMI xmi:version=\"2.1\" xmlns:xmi=\"http:\/\/schema.omg.org\/spec\/XMI\/2.1\" xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" xmlns:CG=\"http:\/\/RhapsodyStandardModel.RhpProperties\/schemas/CG\/_Js860AdAEe20L6GhnqQRdw\/0\" xmlns:RHP=\"http:\/\/RhapsodyStandardModel.RhpProperties\/schemas/RHP\/_Js860QdAEe20L6GhnqQRdw\/0\" xmlns:RhapsodyProfile=\"http:\/\/RhapsodyStandardModel\/schemas\/RhapsodyProfile\/_Js8TwAdAEe20L6GhnqQRdw\/0\" xmlns:ecore=\"http:\/\/www.eclipse.org\/emf\/2002/Ecore\" xmlns:uml=\"http:\/\/www.omg.org\/spec\/UML\/20090901\" xsi:schemaLocation=\"http:\/\/RhapsodyStandardModel.RhpProperties\/schemas\/CG\/_Js860AdAEe20L6GhnqQRdw\/0 #GUID+RhpProperties_Package_packagedElement_2148_eAnnotations_0_contents_0 http:\/\/RhapsodyStandardModel.RhpProperties\/schemas\/RHP\/_Js860QdAEe20L6GhnqQRdw\/0 #GUID+RhpProperties_Package_packagedElement_81114_eAnnotations_0_contents_0 http:\/\/RhapsodyStandardModel\/schemas\/RhapsodyProfile\/_Js8TwAdAEe20L6GhnqQRdw\/0 #GUID_ROOT_Model_packagedElement_1799671379_eAnnotations_0_contents_0 http:\/\/www.omg.org\/spec\/UML\/20090901 http:\/\/www.eclipse.org\/uml2\/2.0.0\/UML\">\n<uml:Model name=\"NAL\">\n<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P01\" name=\"Prototype_Structure\">\n";
+print FI "<xmi:XMI xmi:version=\"2.1\" xmlns:xmi=\"http:\/\/schema.omg.org\/spec\/XMI\/2.1\" xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" xmlns:CG=\"http:\/\/RhapsodyStandardModel.RhpProperties\/schemas/CG\/_Js860AdAEe20L6GhnqQRdw\/0\" xmlns:RHP=\"http:\/\/RhapsodyStandardModel.RhpProperties\/schemas/RHP\/_Js860QdAEe20L6GhnqQRdw\/0\" xmlns:RhapsodyProfile=\"http:\/\/RhapsodyStandardModel\/schemas\/RhapsodyProfile\/_Js8TwAdAEe20L6GhnqQRdw\/0\" xmlns:ecore=\"http:\/\/www.eclipse.org\/emf\/2002/Ecore\" xmlns:uml=\"http:\/\/www.omg.org\/spec\/UML\/20090901\" xsi:schemaLocation=\"http:\/\/RhapsodyStandardModel.RhpProperties\/schemas\/CG\/_Js860AdAEe20L6GhnqQRdw\/0 #GUID+RhpProperties_Package_packagedElement_2148_eAnnotations_0_contents_0 http:\/\/RhapsodyStandardModel.RhpProperties\/schemas\/RHP\/_Js860QdAEe20L6GhnqQRdw\/0 #GUID+RhpProperties_Package_packagedElement_81114_eAnnotations_0_contents_0 http:\/\/RhapsodyStandardModel\/schemas\/RhapsodyProfile\/_Js8TwAdAEe20L6GhnqQRdw\/0 #GUID_ROOT_Model_packagedElement_1799671379_eAnnotations_0_contents_0 http:\/\/www.omg.org\/spec\/UML\/20090901 http:\/\/www.eclipse.org\/uml2\/2.0.0\/UML\">\n<uml:Model name=\"Antriebsbeispiel\">\n<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P01\" name=\"NVL_Profile\">
+      <packagedElement xmi:type=\"uml:Enumeration\" xmi:id=\"GUID+5069770d-2b99-423e-813f-13ce5dc427c4\" name=\"Systemebene\">
+        <ownedLiteral xmi:type=\"uml:EnumerationLiteral\" xmi:id=\"GUID+b347e5af-3539-4839-b842-a2247c34592e\" name=\"Gesamtsystem\" enumeration=\"GUID+5069770d-2b99-423e-813f-13ce5dc427c4\">
+          <specification xmi:type=\"uml:LiteralString\" xmi:id=\"GUID+b347e5af-3539-4839-b842-a2247c34592e_specification\"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:type=\"uml:EnumerationLiteral\" xmi:id=\"GUID+a7b7e947-73b5-4dc6-8204-5962b63cf346\" name=\"Hauptbauabschnitt\" enumeration=\"GUID+5069770d-2b99-423e-813f-13ce5dc427c4\">
+          <specification xmi:type=\"uml:LiteralString\" xmi:id=\"GUID+a7b7e947-73b5-4dc6-8204-5962b63cf346_specification\"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:type=\"uml:EnumerationLiteral\" xmi:id=\"GUID+3cc4a827-485b-401e-98ab-5b3c79254a61\" name=\"Bauabschnitt\" enumeration=\"GUID+5069770d-2b99-423e-813f-13ce5dc427c4\">
+          <specification xmi:type=\"uml:LiteralString\" xmi:id=\"GUID+3cc4a827-485b-401e-98ab-5b3c79254a61_specification\"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:type=\"uml:EnumerationLiteral\" xmi:id=\"GUID+f5ee1711-586d-43ab-8ae7-a7fca4b30688\" name=\"Hauptbaugruppe\" enumeration=\"GUID+5069770d-2b99-423e-813f-13ce5dc427c4\">
+          <specification xmi:type=\"uml:LiteralString\" xmi:id=\"GUID+f5ee1711-586d-43ab-8ae7-a7fca4b30688_specification\"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:type=\"uml:EnumerationLiteral\" xmi:id=\"GUID+c5fe1bfd-416c-466c-8c5a-a12da3afd648\" name=\"Baugruppe\" enumeration=\"GUID+5069770d-2b99-423e-813f-13ce5dc427c4\">
+          <specification xmi:type=\"uml:LiteralString\" xmi:id=\"GUID+c5fe1bfd-416c-466c-8c5a-a12da3afd648_specification\"/>
+        </ownedLiteral>
+      </packagedElement>\n";
 close (FI);
 
 # export_dng.csv file is the exported file from the DNG Module view. Please refer to the document: "Bulk Import of DNG Module Artifacts into Rhapsody" 
@@ -61,12 +78,11 @@ while(<FH1>){
 		my $package_xml = "<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P_" . $id  . "\" name=\"_" . $bg_no . "\">";
 		my $insert = "<!--childof_" . $id . "-->\n";
 		my $stereotype_xml = "<packagedElement xmi:type=\"uml:Stereotype\" xmi:id=\"S_" . $id  . "\" name=\"" . $st_text . "\">";
-		my $tag_insert = "<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"t_" . $id . "\"  name=\"Systemebene\" visibility=\"public\">
-          <type xmi:type=\"uml:PrimitiveType\" href=\"http:\/\/schema.omg.org\/spec\/UML\/2.1\/uml.xml\#String\"\/>
+		$grand_parent_no = $id;
+		my $tag_insert = "<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"t_" . $grand_parent_no . "\"  name=\"Systemebene\" visibility=\"public\" type=\"GUID+5069770d-2b99-423e-813f-13ce5dc427c4\">
           <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"tv_" . $id . "\" value=\"Hauptbauabschnitt\"\/>
         <\/ownedAttribute>"; 
 		my $package_end = "</packagedElement>\n";
-		$grand_parent_no = $id;
 		print FW $package_xml;
 		print FW "\n";
 		print FW $insert;
@@ -93,8 +109,7 @@ while(<FH1>){
 		my $package_end_child = "</packagedElement>\n";
 		my $stereotype_xml_child = "<packagedElement xmi:type=\"uml:Stereotype\" xmi:id=\"S_" . $id  . "\" name=\"" . $st_text . "\">\n";
 		my $gen_child = "<generalization xmi:type=\"uml:Generalization\" xmi:id=\"S_" . $id . "_S_" . $parent . "\" general=\"S_" . $parent . "\" specific=\"S_". $id . "\"/>\n"; 
-		my $tag_insert = "<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"t_" . $id . "\"  name=\"Systemebene\" visibility=\"public\">
-          <type xmi:type=\"uml:PrimitiveType\" href=\"http:\/\/schema.omg.org\/spec\/UML\/2.1\/uml.xml\#String\"\/>
+		my $tag_insert = "<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"t_" . $grand_parent_no . "\"  name=\"Systemebene\" source=\"redefines\" visibility=\"public\" type=\"GUID+5069770d-2b99-423e-813f-13ce5dc427c4\">
           <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"tv_" . $id . "\" value=\"" . $systemebene_value . "\"\/>
         <\/ownedAttribute>"; 
 		
