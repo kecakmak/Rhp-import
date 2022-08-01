@@ -81,7 +81,11 @@ while(<FH1>){
 		$grand_parent_no = $id;
 		my $tag_insert = "<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"t_" . $grand_parent_no . "\"  name=\"Systemebene\" visibility=\"public\" type=\"GUID+5069770d-2b99-423e-813f-13ce5dc427c4\">
           <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"tv_" . $id . "\" value=\"Hauptbauabschnitt\"\/>
-        <\/ownedAttribute>"; 
+        <\/ownedAttribute>
+		<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"GUID+18d86d71-5bfa-48ce-81be-bc8f2442d9bd\" name=\"MBgV_Konform\" visibility=\"public\">
+            <type xmi:type=\"uml:PrimitiveType\" href=\"http://schema.omg.org/spec/UML/2.1/uml.xml#Boolean\"/>
+            <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"GUID+18d86d71-5bfa-48ce-81be-bc8f2442d9bd_defaultValue\" value=\"False\"/>
+          </ownedAttribute>"; 
 		my $package_end = "</packagedElement>\n";
 		print FW $package_xml;
 		print FW "\n";
@@ -112,9 +116,13 @@ while(<FH1>){
 #		my $gen_child = "<generalization xmi:type=\"uml:Generalization\" xmi:id=\"S_" . $id . "_S_" . $parent . "\" general=\"S_" . $parent . "\" specific=\"S_". $id . "\"/>\n"; 
 # Below line is for Dependency between stereotypes 
 		my $gen_child = "<packagedElement xmi:type=\"uml:Dependency\" xmi:id=\"S_" . $id . "_S_" . $parent . "\" name=\"S_" . $parent . "\" supplier=\"S_" . $parent . "\" client=\"S_" . $id ."\"/>";
-		my $tag_insert = "<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"t_" . $grand_parent_no . "\"  name=\"Systemebene\" source=\"redefines\" visibility=\"public\" type=\"5069770d-2b99-423e-813f-13ce5dc427c4\">
+		my $tag_insert = "<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"t_" . $grand_parent_no . "\"  name=\"Systemebene\" source=\"redefines\" visibility=\"public\" type=\"GUID+5069770d-2b99-423e-813f-13ce5dc427c4\">
           <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"tv_" . $id . "\" value=\"" . $systemebene_value . "\"\/>
-        <\/ownedAttribute>"; 
+        <\/ownedAttribute>
+		<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"GUID+18d86d71-5bfa-48ce-81be-bc8f2442d9bd\" name=\"MBgV_Konform\" visibility=\"public\">
+            <type xmi:type=\"uml:PrimitiveType\" href=\"http://schema.omg.org/spec/UML/2.1/uml.xml#Boolean\"/>
+            <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"GUID+18d86d71-5bfa-48ce-81be-bc8f2442d9bd_defaultValue\" value=\"False\"/>
+          </ownedAttribute>"; 
 		
 		if ($indent ne "___") {
 			$package_xml_child = "<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P_" . $id  . "\" name=\"_" . $package_name . "\">\n";

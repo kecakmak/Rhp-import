@@ -1,86 +1,264 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://schema.omg.org/spec/UML/2.1" xsi:schemaLocation="http://schema.omg.org/spec/UML/2.1 http://www.eclipse.org/uml2/2.0.0/UML">
-  <uml:Model xmi:id="GUID+5f996e3d-ed1e-4613-87f4-ffcccdb4e0d5" name="NVL-G">
-    <elementImport xmi:type="uml:ElementImport" xmi:id="GUID+5f996e3d-ed1e-4613-87f4-ffcccdb4e0d5_elementImport_1377272541" importingNamespace="GUID+5f996e3d-ed1e-4613-87f4-ffcccdb4e0d5">
+  <uml:Model xmi:id="GUID+b7d8308d-7c16-47a9-a08a-9d03d6b15a8a" name="Antriebsbeispiel">
+    <elementImport xmi:type="uml:ElementImport" xmi:id="GUID+b7d8308d-7c16-47a9-a08a-9d03d6b15a8a_elementImport_1377272541" importingNamespace="GUID+b7d8308d-7c16-47a9-a08a-9d03d6b15a8a">
       <importedElement xmi:type="uml:Profile" href="http://schema.omg.org/spec/UML/2.1/StandardProfileL2.xmi#_0"/>
     </elementImport>
-    <packagedElement xmi:type="uml:Component" href="DefaultComponent.cmpx.xmi#GUID+e39f5a79-e07a-496c-8568-87f60e61e2b8_0"/>
-    <packagedElement xmi:type="uml:Package" href="Default.sbsx.xmi#GUID+b43dcdf8-3a3a-406a-abe8-768c910ae22e_0"/>
-    <packagedElement xmi:type="uml:Profile" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847" name="profile_1">
+    <packagedElement xmi:type="uml:Component" href="DefaultComponent.cmpx.xmi#GUID+ee55a454-e9a7-41b8-95c9-24195480c3d0_0"/>
+    <packagedElement xmi:type="uml:Profile" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c" name="NVL_Profile">
       <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML">
-          <contents xmi:type="ecore:EPackage" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0" name="profile_1" nsURI="http://NVL-G/schemas/profile_1/_IOiwMBEREe2FELsMWwhNKQ/0" nsPrefix="profile_1">
-            <eClassifiers xmi:type="ecore:EClass" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_0" name="parent">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <contents xmi:type="ecore:EPackage" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0" name="NVL_Profile" nsURI="http://Antriebsbeispiel/schemas/NVL_Profile/_RgPWshFhEe2KXKkMV-0ZcA/0" nsPrefix="NVL_Profile">
+            <eClassifiers xmi:type="ecore:EEnum" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_0" name="Systemebene">
               <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
-                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_0_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+5663c922-17e0-42ca-b656-7144be747eac"/>
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_0_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+5069770d-2b99-423e-813f-13ce5dc427c4"/>
+              </xmi:Extension>
+              <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_0_eLiterals_0" name="Gesamtsystem"/>
+              <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_0_eLiterals_1" name="Hauptbauabschnitt" value="1"/>
+              <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_0_eLiterals_2" name="Bauabschnitt" value="2"/>
+              <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_0_eLiterals_3" name="Hauptbaugruppe" value="3"/>
+              <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_0_eLiterals_4" name="Baugruppe" value="4"/>
+            </eClassifiers>
+            <eClassifiers xmi:type="ecore:EDataType" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_1" name="RhpCharacter" instanceClassName="java.lang.String">
+              <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_1_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+b7e65bea-6691-4590-9603-62027199b5ea"/>
               </xmi:Extension>
             </eClassifiers>
-            <eClassifiers xmi:type="ecore:EClass" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_1" name="child">
+            <eClassifiers xmi:type="ecore:EDataType" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_2" name="RhpReal" instanceClassName="java.lang.String">
               <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
-                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_1_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+8e0ab098-e20d-431c-bd69-9950e48bf16f"/>
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_2_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+34e00222-aae8-4bb2-b23a-cd349dbe0c8e"/>
               </xmi:Extension>
             </eClassifiers>
-            <eClassifiers xmi:type="ecore:EDataType" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_2" name="RhpCharacter" instanceClassName="java.lang.String">
+            <eClassifiers xmi:type="ecore:EDataType" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_3" name="RhpVoid" instanceClassName="java.lang.String">
               <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
-                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_2_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+b7e65bea-6691-4590-9603-62027199b5ea"/>
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_3_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+cd984976-2388-43e6-b12f-11af05b7d764"/>
               </xmi:Extension>
             </eClassifiers>
-            <eClassifiers xmi:type="ecore:EDataType" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_3" name="RhpReal" instanceClassName="java.lang.String">
+            <eClassifiers xmi:type="ecore:EDataType" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_4" name="RhpAddress" instanceClassName="java.lang.String">
               <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
-                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_3_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+34e00222-aae8-4bb2-b23a-cd349dbe0c8e"/>
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_4_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+90328072-ef68-42d6-836a-28b3a821ade8"/>
               </xmi:Extension>
             </eClassifiers>
-            <eClassifiers xmi:type="ecore:EDataType" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_4" name="RhpVoid" instanceClassName="java.lang.String">
+            <eClassifiers xmi:type="ecore:EDataType" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_5" name="SearchUnresolvedEnum" instanceClassName="java.lang.String">
               <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
-                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_4_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+cd984976-2388-43e6-b12f-11af05b7d764"/>
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_5_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+693e6225-b80c-4632-b3d8-9b2c5873c915"/>
               </xmi:Extension>
             </eClassifiers>
-            <eClassifiers xmi:type="ecore:EDataType" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_5" name="RhpAddress" instanceClassName="java.lang.String">
+            <eClassifiers xmi:type="ecore:EDataType" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_6" name="SearchRelRefAmountTypeEnum" instanceClassName="java.lang.String">
               <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
-                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_5_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+90328072-ef68-42d6-836a-28b3a821ade8"/>
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_6_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+20f1e2d7-a8d9-47e3-ba8e-79c8a90bb771"/>
               </xmi:Extension>
             </eClassifiers>
-            <eClassifiers xmi:type="ecore:EDataType" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_6" name="SearchUnresolvedEnum" instanceClassName="java.lang.String">
+            <eClassifiers xmi:type="ecore:EDataType" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_7" name="SearchRelRefHowRelatedEnum" instanceClassName="java.lang.String">
               <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
-                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_6_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+693e6225-b80c-4632-b3d8-9b2c5873c915"/>
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_7_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+1f51c8cc-5b4f-4e36-a391-d8a3d29b610a"/>
               </xmi:Extension>
             </eClassifiers>
-            <eClassifiers xmi:type="ecore:EDataType" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_7" name="SearchRelRefAmountTypeEnum" instanceClassName="java.lang.String">
+            <eClassifiers xmi:type="ecore:EDataType" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_8" name="MetricsChartTypeEnum" instanceClassName="java.lang.String">
               <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
-                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_7_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+20f1e2d7-a8d9-47e3-ba8e-79c8a90bb771"/>
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_8_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+16ad8b9b-888c-4f32-80e5-8eeaa7111d07"/>
               </xmi:Extension>
             </eClassifiers>
-            <eClassifiers xmi:type="ecore:EDataType" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_8" name="SearchRelRefHowRelatedEnum" instanceClassName="java.lang.String">
+            <eClassifiers xmi:type="ecore:EDataType" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_9" name="Untyped" instanceClassName="java.lang.String">
               <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
-                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_8_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+1f51c8cc-5b4f-4e36-a391-d8a3d29b610a"/>
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_9_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+34ab43c6-e05a-46a1-b6b5-3efc74493294"/>
               </xmi:Extension>
             </eClassifiers>
-            <eClassifiers xmi:type="ecore:EDataType" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_9" name="MetricsChartTypeEnum" instanceClassName="java.lang.String">
+            <eClassifiers xmi:type="ecore:EDataType" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_10" name="SearchTypeEnum" instanceClassName="java.lang.String">
               <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
-                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_9_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+16ad8b9b-888c-4f32-80e5-8eeaa7111d07"/>
-              </xmi:Extension>
-            </eClassifiers>
-            <eClassifiers xmi:type="ecore:EDataType" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_10" name="Untyped" instanceClassName="java.lang.String">
-              <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
-                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_10_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+34ab43c6-e05a-46a1-b6b5-3efc74493294"/>
-              </xmi:Extension>
-            </eClassifiers>
-            <eClassifiers xmi:type="ecore:EDataType" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_11" name="SearchTypeEnum" instanceClassName="java.lang.String">
-              <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
-                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_11_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+ab2bdee5-8a4f-47c9-ba7a-e2dccbdeeb45"/>
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_10_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+ab2bdee5-8a4f-47c9-ba7a-e2dccbdeeb45"/>
               </xmi:Extension>
             </eClassifiers>
           </contents>
         </eAnnotations>
       </xmi:Extension>
-      <packagedElement xmi:type="uml:Stereotype" xmi:id="GUID+5663c922-17e0-42ca-b656-7144be747eac" name="parent"/>
-      <packagedElement xmi:type="uml:Stereotype" xmi:id="GUID+8e0ab098-e20d-431c-bd69-9950e48bf16f" name="child" clientDependency="GUID+64643f77-b0f6-4932-8d98-d06906127762">
-      <packagedElement xmi:type="uml:Dependency" xmi:id="GUID+64643f77-b0f6-4932-8d98-d06906127762" name="parent" supplier="GUID+5663c922-17e0-42ca-b656-7144be747eac" client="GUID+8e0ab098-e20d-431c-bd69-9950e48bf16f"/>
-   </packagedElement>
-   </packagedElement>
-    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="GUID+5f996e3d-ed1e-4613-87f4-ffcccdb4e0d5_elementImport_1377272541_0" applyingPackage="GUID+5f996e3d-ed1e-4613-87f4-ffcccdb4e0d5">
+      <packagedElement xmi:type="uml:Profile" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18" name="Gesamtsystem_Pkg" metaclassReference="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_elementImport_-55042364 GUID+f9c99352-d739-4d99-a846-7ad0343edc18_elementImport_-1326162811">
+        <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <contents xmi:type="ecore:EPackage" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0" name="Gesamtsystem_Pkg" nsURI="http://Antriebsbeispiel.NVL_Profile/schemas/Gesamtsystem_Pkg/_RgPWsRFhEe2KXKkMV-0ZcA/0" nsPrefix="Gesamtsystem_Pkg">
+              <eClassifiers xmi:type="ecore:EClass" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_0" name="Gesamtsystem">
+                <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_0_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+98276bc3-12d9-4f0f-a1ba-c791c618928f"/>
+                </xmi:Extension>
+                <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_0_eStructuralFeatures_0" name="Systemebene" ordered="false" lowerBound="1" eType="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_0" defaultValueLiteral="Gesamtsystem"/>
+                <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_0_eStructuralFeatures_1" name="MBgV_Konform" ordered="false" lowerBound="1" defaultValueLiteral="False">
+                  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+                </eStructuralFeatures>
+                <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_0_eStructuralFeatures_2" name="Deneme" ordered="false" upperBound="-1" defaultValueLiteral="ABC">
+                  <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+                </eStructuralFeatures>
+                <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_0_eStructuralFeatures_3" name="base_Class" ordered="false" lowerBound="1">
+                  <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.0.0/UML#//Class"/>
+                </eStructuralFeatures>
+                <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_0_eStructuralFeatures_4" name="base_Interface" ordered="false" lowerBound="1">
+                  <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.0.0/UML#//Interface"/>
+                </eStructuralFeatures>
+              </eClassifiers>
+              <eClassifiers xmi:type="ecore:EClass" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_1" name="_5000_Fernmelde_Navigations_Ortungs_und_EloKa_Anlagen" eSuperTypes="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_0">
+                <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_1_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+393db5cf-7c20-4572-bc58-d22771a0afe9"/>
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_1_eAnnotations_1" source="duplicates">
+                    <contents xmi:type="ecore:EAttribute" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_1_eAnnotations_1_contents_0" name="Deneme" ordered="false" upperBound="-1" defaultValueLiteral="CDE">
+                      <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
+                        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_1_eAnnotations_1_contents_0_eAnnotations_0" source="redefines" references="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_0_eStructuralFeatures_2"/>
+                      </xmi:Extension>
+                      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+                    </contents>
+                    <contents xmi:type="ecore:EReference" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_1_eAnnotations_1_contents_1" name="base_Class" ordered="false" lowerBound="1">
+                      <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
+                        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_1_eAnnotations_1_contents_1_eAnnotations_0" source="redefines" references="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_0_eStructuralFeatures_3"/>
+                      </xmi:Extension>
+                      <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.0.0/UML#//Class"/>
+                    </contents>
+                    <contents xmi:type="ecore:EReference" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_1_eAnnotations_1_contents_2" name="base_Interface" ordered="false" lowerBound="1">
+                      <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
+                        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_1_eAnnotations_1_contents_2_eAnnotations_0" source="redefines" references="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_0_eStructuralFeatures_4"/>
+                      </xmi:Extension>
+                      <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.0.0/UML#//Interface"/>
+                    </contents>
+                  </eAnnotations>
+                </xmi:Extension>
+              </eClassifiers>
+            </contents>
+          </eAnnotations>
+        </xmi:Extension>
+        <elementImport xmi:type="uml:ElementImport" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_elementImport_-55042364" importingNamespace="GUID+f9c99352-d739-4d99-a846-7ad0343edc18">
+          <importedElement xmi:type="uml:Class" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Class"/>
+        </elementImport>
+        <elementImport xmi:type="uml:ElementImport" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_elementImport_-1326162811" importingNamespace="GUID+f9c99352-d739-4d99-a846-7ad0343edc18">
+          <importedElement xmi:type="uml:Class" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Interface"/>
+        </elementImport>
+        <elementImport xmi:type="uml:ElementImport" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_elementImport_GUID+5069770d-2b99-423e-813f-13ce5dc427c4" importedElement="GUID+5069770d-2b99-423e-813f-13ce5dc427c4" importingNamespace="GUID+f9c99352-d739-4d99-a846-7ad0343edc18"/>
+        <elementImport xmi:type="uml:ElementImport" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_elementImport_982266338" importingNamespace="GUID+f9c99352-d739-4d99-a846-7ad0343edc18">
+          <importedElement xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Boolean"/>
+        </elementImport>
+        <elementImport xmi:type="uml:ElementImport" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_elementImport_1215822615" importingNamespace="GUID+f9c99352-d739-4d99-a846-7ad0343edc18">
+          <importedElement xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+        </elementImport>
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="GUID+98276bc3-12d9-4f0f-a1ba-c791c618928f" name="Gesamtsystem">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="GUID+b4f99f58-de97-4f0a-9cd3-45312531842a" name="Systemebene" visibility="public" type="GUID+5069770d-2b99-423e-813f-13ce5dc427c4">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="GUID+b4f99f58-de97-4f0a-9cd3-45312531842a_defaultValue" value="Gesamtsystem"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="GUID+18d86d71-5bfa-48ce-81be-bc8f2442d9bd" name="MBgV_Konform" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Boolean"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="GUID+18d86d71-5bfa-48ce-81be-bc8f2442d9bd_defaultValue" value="False"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="GUID+14c69aef-b831-459e-98ba-dcbed675aaaf" name="Deneme" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="GUID+14c69aef-b831-459e-98ba-dcbed675aaaf_defaultValue" value="ABC"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="GUID+98276bc3-12d9-4f0f-a1ba-c791c618928f_ownedAttribute_-519634326" name="base_Class" visibility="public" association="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_313084393">
+            <type xmi:type="uml:Class" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Class"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="GUID+98276bc3-12d9-4f0f-a1ba-c791c618928f_ownedAttribute_1178402091" name="base_Interface" visibility="public" association="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_755521480">
+            <type xmi:type="uml:Class" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Interface"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="GUID+393db5cf-7c20-4572-bc58-d22771a0afe9" name="5000_Fernmelde_Navigations_Ortungs_und_EloKa_Anlagen">
+          <generalization xmi:type="uml:Generalization" xmi:id="GUID+393db5cf-7c20-4572-bc58-d22771a0afe9_GUID+98276bc3-12d9-4f0f-a1ba-c791c618928f_Generalization" general="GUID+98276bc3-12d9-4f0f-a1ba-c791c618928f" specific="GUID+393db5cf-7c20-4572-bc58-d22771a0afe9"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="GUID+cb44559a-dd9d-45b7-a0fb-cb269c23e951" name="Deneme" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="GUID+cb44559a-dd9d-45b7-a0fb-cb269c23e951_upperValue" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="GUID+cb44559a-dd9d-45b7-a0fb-cb269c23e951_lowerValue"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="GUID+cb44559a-dd9d-45b7-a0fb-cb269c23e951_defaultValue" value="CDE"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="GUID+393db5cf-7c20-4572-bc58-d22771a0afe9_ownedAttribute_-519634326" name="base_Class" visibility="public" association="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_-1705458034">
+            <type xmi:type="uml:Class" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Class"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="GUID+393db5cf-7c20-4572-bc58-d22771a0afe9_ownedAttribute_1178402091" name="base_Interface" visibility="public" association="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_1265387885">
+            <type xmi:type="uml:Class" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Interface"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Profile" xmi:id="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4" name="_5000" metaclassReference="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_elementImport_-55042364 GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_elementImport_-1326162811">
+          <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <contents xmi:type="ecore:EPackage" xmi:id="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_eAnnotations_0_contents_0" name="_5000" nsURI="http://Antriebsbeispiel.NVL_Profile.Gesamtsystem_Pkg/schemas/_5000/_RgPWsBFhEe2KXKkMV-0ZcA/0" nsPrefix="_5000">
+                <eClassifiers xmi:type="ecore:EClass" xmi:id="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_eAnnotations_0_contents_0_eClassifiers_0" name="_5000_Planung_und_allgemeine_Richtlinien" eSuperTypes="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_1">
+                  <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
+                    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_eAnnotations_0_contents_0_eClassifiers_0_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+afdc732d-4b68-448e-b973-36a8b908b405"/>
+                    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_eAnnotations_0_contents_0_eClassifiers_0_eAnnotations_1" source="duplicates">
+                      <contents xmi:type="ecore:EReference" xmi:id="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_eAnnotations_0_contents_0_eClassifiers_0_eAnnotations_1_contents_0" name="base_Class" ordered="false" lowerBound="1">
+                        <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
+                          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_eAnnotations_0_contents_0_eClassifiers_0_eAnnotations_1_contents_0_eAnnotations_0" source="redefines" references="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_0_eStructuralFeatures_3 GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_1_eAnnotations_1_contents_1"/>
+                        </xmi:Extension>
+                        <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.0.0/UML#//Class"/>
+                      </contents>
+                      <contents xmi:type="ecore:EReference" xmi:id="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_eAnnotations_0_contents_0_eClassifiers_0_eAnnotations_1_contents_1" name="base_Interface" ordered="false" lowerBound="1">
+                        <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
+                          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_eAnnotations_0_contents_0_eClassifiers_0_eAnnotations_1_contents_1_eAnnotations_0" source="redefines" references="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_0_eStructuralFeatures_4 GUID+f9c99352-d739-4d99-a846-7ad0343edc18_eAnnotations_0_contents_0_eClassifiers_1_eAnnotations_1_contents_2"/>
+                        </xmi:Extension>
+                        <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.0.0/UML#//Interface"/>
+                      </contents>
+                    </eAnnotations>
+                  </xmi:Extension>
+                </eClassifiers>
+              </contents>
+            </eAnnotations>
+          </xmi:Extension>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_elementImport_-55042364" importingNamespace="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4">
+            <importedElement xmi:type="uml:Class" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Class"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_elementImport_-1326162811" importingNamespace="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4">
+            <importedElement xmi:type="uml:Class" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Interface"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_elementImport_1215822615" importingNamespace="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4">
+            <importedElement xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_elementImport_GUID+5069770d-2b99-423e-813f-13ce5dc427c4" importedElement="GUID+5069770d-2b99-423e-813f-13ce5dc427c4" importingNamespace="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4"/>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_elementImport_982266338" importingNamespace="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4">
+            <importedElement xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Boolean"/>
+          </elementImport>
+          <packagedElement xmi:type="uml:Stereotype" xmi:id="GUID+afdc732d-4b68-448e-b973-36a8b908b405" name="5000_Planung_und_allgemeine_Richtlinien">
+            <generalization xmi:type="uml:Generalization" xmi:id="GUID+393db5cf-7c20-4572-bc58-d22771a0afe9_GUID+afdc732d-4b68-448e-b973-36a8b908b405_Generalization" general="GUID+393db5cf-7c20-4572-bc58-d22771a0afe9" specific="GUID+afdc732d-4b68-448e-b973-36a8b908b405"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="GUID+afdc732d-4b68-448e-b973-36a8b908b405_ownedAttribute_-519634326" name="base_Class" visibility="public" association="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_packagedElement_715194126">
+              <type xmi:type="uml:Class" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Class"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="GUID+afdc732d-4b68-448e-b973-36a8b908b405_ownedAttribute_1178402091" name="base_Interface" visibility="public" association="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_packagedElement_-262718001">
+              <type xmi:type="uml:Class" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Interface"/>
+            </ownedAttribute>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Extension" xmi:id="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_packagedElement_715194126" name="Class_5000_Planung_und_allgemeine_Richtlinien" memberEnd="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_packagedElement_715194126_ownedEnd_356003573 GUID+afdc732d-4b68-448e-b973-36a8b908b405_ownedAttribute_-519634326">
+            <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_packagedElement_715194126_ownedEnd_356003573" name="extension_5000_Planung_und_allgemeine_Richtlinien" visibility="public" type="GUID+afdc732d-4b68-448e-b973-36a8b908b405" aggregation="composite" owningAssociation="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_packagedElement_715194126" association="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_packagedElement_715194126"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Extension" xmi:id="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_packagedElement_-262718001" name="Interface_5000_Planung_und_allgemeine_Richtlinien" memberEnd="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_packagedElement_-262718001_ownedEnd_356003573 GUID+afdc732d-4b68-448e-b973-36a8b908b405_ownedAttribute_1178402091">
+            <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_packagedElement_-262718001_ownedEnd_356003573" name="extension_5000_Planung_und_allgemeine_Richtlinien" visibility="public" type="GUID+afdc732d-4b68-448e-b973-36a8b908b405" aggregation="composite" owningAssociation="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_packagedElement_-262718001" association="GUID+eaabaee8-30eb-4afc-812b-6d3d3f5063f4_packagedElement_-262718001"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Extension" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_313084393" name="Class_Gesamtsystem" memberEnd="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_313084393_ownedEnd_-1684072862 GUID+98276bc3-12d9-4f0f-a1ba-c791c618928f_ownedAttribute_-519634326">
+          <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_313084393_ownedEnd_-1684072862" name="extension_Gesamtsystem" visibility="public" type="GUID+98276bc3-12d9-4f0f-a1ba-c791c618928f" aggregation="composite" owningAssociation="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_313084393" association="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_313084393"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Extension" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_755521480" name="Interface_Gesamtsystem" memberEnd="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_755521480_ownedEnd_-1684072862 GUID+98276bc3-12d9-4f0f-a1ba-c791c618928f_ownedAttribute_1178402091">
+          <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_755521480_ownedEnd_-1684072862" name="extension_Gesamtsystem" visibility="public" type="GUID+98276bc3-12d9-4f0f-a1ba-c791c618928f" aggregation="composite" owningAssociation="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_755521480" association="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_755521480"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Extension" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_-1705458034" name="Class_5000_Fernmelde_Navigations_Ortungs_und_EloKa_Anlagen" memberEnd="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_-1705458034_ownedEnd_1682368007 GUID+393db5cf-7c20-4572-bc58-d22771a0afe9_ownedAttribute_-519634326">
+          <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_-1705458034_ownedEnd_1682368007" name="extension_5000_Fernmelde_Navigations_Ortungs_und_EloKa_Anlagen" visibility="public" type="GUID+393db5cf-7c20-4572-bc58-d22771a0afe9" aggregation="composite" owningAssociation="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_-1705458034" association="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_-1705458034"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Extension" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_1265387885" name="Interface_5000_Fernmelde_Navigations_Ortungs_und_EloKa_Anlagen" memberEnd="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_1265387885_ownedEnd_1682368007 GUID+393db5cf-7c20-4572-bc58-d22771a0afe9_ownedAttribute_1178402091">
+          <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_1265387885_ownedEnd_1682368007" name="extension_5000_Fernmelde_Navigations_Ortungs_und_EloKa_Anlagen" visibility="public" type="GUID+393db5cf-7c20-4572-bc58-d22771a0afe9" aggregation="composite" owningAssociation="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_1265387885" association="GUID+f9c99352-d739-4d99-a846-7ad0343edc18_packagedElement_1265387885"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="GUID+5069770d-2b99-423e-813f-13ce5dc427c4" name="Systemebene">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="GUID+b347e5af-3539-4839-b842-a2247c34592e" name="Gesamtsystem" enumeration="GUID+5069770d-2b99-423e-813f-13ce5dc427c4">
+          <specification xmi:type="uml:LiteralString" xmi:id="GUID+b347e5af-3539-4839-b842-a2247c34592e_specification"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="GUID+a7b7e947-73b5-4dc6-8204-5962b63cf346" name="Hauptbauabschnitt" enumeration="GUID+5069770d-2b99-423e-813f-13ce5dc427c4">
+          <specification xmi:type="uml:LiteralString" xmi:id="GUID+a7b7e947-73b5-4dc6-8204-5962b63cf346_specification"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="GUID+3cc4a827-485b-401e-98ab-5b3c79254a61" name="Bauabschnitt" enumeration="GUID+5069770d-2b99-423e-813f-13ce5dc427c4">
+          <specification xmi:type="uml:LiteralString" xmi:id="GUID+3cc4a827-485b-401e-98ab-5b3c79254a61_specification"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="GUID+f5ee1711-586d-43ab-8ae7-a7fca4b30688" name="Hauptbaugruppe" enumeration="GUID+5069770d-2b99-423e-813f-13ce5dc427c4">
+          <specification xmi:type="uml:LiteralString" xmi:id="GUID+f5ee1711-586d-43ab-8ae7-a7fca4b30688_specification"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="GUID+c5fe1bfd-416c-466c-8c5a-a12da3afd648" name="Baugruppe" enumeration="GUID+5069770d-2b99-423e-813f-13ce5dc427c4">
+          <specification xmi:type="uml:LiteralString" xmi:id="GUID+c5fe1bfd-416c-466c-8c5a-a12da3afd648_specification"/>
+        </ownedLiteral>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" href="Default.sbsx.xmi#GUID+9b12040c-a79c-496b-9477-57b4e29abef6_0"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="GUID+b7d8308d-7c16-47a9-a08a-9d03d6b15a8a_elementImport_1377272541_0" applyingPackage="GUID+b7d8308d-7c16-47a9-a08a-9d03d6b15a8a">
       <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+5f996e3d-ed1e-4613-87f4-ffcccdb4e0d5_elementImport_1377272541_0_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+b7d8308d-7c16-47a9-a08a-9d03d6b15a8a_elementImport_1377272541_0_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <references xmi:type="ecore:EPackage" href="http://schema.omg.org/spec/UML/2.1/StandardProfileL2.xmi#_yzU58YinEdqtvbnfB2L_5w"/>
         </eAnnotations>
       </xmi:Extension>
@@ -92,7 +270,7 @@
       <packagedElement xmi:type="uml:Profile" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile" name="PredefinedTypes_profile" metaclassReference="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_-166083405 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_-884093569 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_-1539217166 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_1775819765 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_1278183058 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_-55042364 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_-1326162811 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_-57139391 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_1284390826 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_-1437865405 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_-808700757 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_-1250843940 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_-52893722 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_-1248370890 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_2007172408 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_1936714659 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_1274554032 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_1620554561 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_-1248310859 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_-9902246 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_-40027683 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_1914450661 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_-1148646943 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_-1746197560 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_-1168316968 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_1713006473 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_1914172064 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_-1048178671 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_-775039735 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_1178433572 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_-808797498 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_-1259323221 GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_elementImport_1886970777">
         <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <contents xmi:type="ecore:EPackage" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0_contents_0" name="PredefinedTypes_profile" nsURI="http://RhapsodyStandardModel.PredefinedTypes/schemas/PredefinedTypes_profile/_IOshMBEREe2FELsMWwhNKQ/0" nsPrefix="PredefinedTypes_profile">
+            <contents xmi:type="ecore:EPackage" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0_contents_0" name="PredefinedTypes_profile" nsURI="http://RhapsodyStandardModel.PredefinedTypes/schemas/PredefinedTypes_profile/_RgZHsBFhEe2KXKkMV-0ZcA/0" nsPrefix="PredefinedTypes_profile">
               <eClassifiers xmi:type="ecore:EClass" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0_contents_0_eClassifiers_0" name="MergeCandidate">
                 <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
                   <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0_contents_0_eClassifiers_0_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+0e3d4665-1d22-4384-a683-dd70e7f193e7"/>
@@ -635,11 +813,11 @@
                 <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
                   <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0_contents_0_eClassifiers_56_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+4c77a3b1-822f-466e-bd06-76145c9e3b88"/>
                 </xmi:Extension>
-                <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0_contents_0_eClassifiers_56_eStructuralFeatures_0" name="Find_As" ordered="false" lowerBound="1" eType="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_11" defaultValueLiteral="WildCardSearch"/>
+                <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0_contents_0_eClassifiers_56_eStructuralFeatures_0" name="Find_As" ordered="false" lowerBound="1" eType="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_10" defaultValueLiteral="WildCardSearch"/>
                 <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0_contents_0_eClassifiers_56_eStructuralFeatures_1" name="Match_Case" ordered="false" lowerBound="1">
                   <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
                 </eStructuralFeatures>
-                <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0_contents_0_eClassifiers_56_eStructuralFeatures_2" name="Unresolved" ordered="false" lowerBound="1" eType="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_6" defaultValueLiteral="IgnoreUnresolved"/>
+                <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0_contents_0_eClassifiers_56_eStructuralFeatures_2" name="Unresolved" ordered="false" lowerBound="1" eType="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_5" defaultValueLiteral="IgnoreUnresolved"/>
                 <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0_contents_0_eClassifiers_56_eStructuralFeatures_3" name="Find_What" ordered="false" lowerBound="1">
                   <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
                 </eStructuralFeatures>
@@ -667,11 +845,11 @@
                 <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0_contents_0_eClassifiers_56_eStructuralFeatures_11" name="Tag_Value" ordered="false" lowerBound="1">
                   <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
                 </eStructuralFeatures>
-                <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0_contents_0_eClassifiers_56_eStructuralFeatures_12" name="RelRef_Amount_Type" ordered="false" lowerBound="1" eType="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_7" defaultValueLiteral="MoreThan"/>
+                <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0_contents_0_eClassifiers_56_eStructuralFeatures_12" name="RelRef_Amount_Type" ordered="false" lowerBound="1" eType="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_6" defaultValueLiteral="MoreThan"/>
                 <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0_contents_0_eClassifiers_56_eStructuralFeatures_13" name="RelRef_Include_Amount" ordered="false" lowerBound="1" defaultValueLiteral="0">
                   <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
                 </eStructuralFeatures>
-                <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0_contents_0_eClassifiers_56_eStructuralFeatures_14" name="RelRef_How_Related" ordered="false" lowerBound="1" eType="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_8" defaultValueLiteral="NotChosen_HowRelated"/>
+                <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0_contents_0_eClassifiers_56_eStructuralFeatures_14" name="RelRef_How_Related" ordered="false" lowerBound="1" eType="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_7" defaultValueLiteral="NotChosen_HowRelated"/>
                 <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0_contents_0_eClassifiers_56_eStructuralFeatures_15" name="RelRef_Metatype" ordered="false" lowerBound="1">
                   <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
                 </eStructuralFeatures>
@@ -773,7 +951,7 @@
                 <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
                   <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0_contents_0_eClassifiers_64_eAnnotations_0" source="http://www.eclipse.org/uml2/2.0.0/UML" references="GUID+d7835c5f-d908-47bc-8bab-f37bc3dd3f8a"/>
                 </xmi:Extension>
-                <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0_contents_0_eClassifiers_64_eStructuralFeatures_0" name="Metrics_Chart_Type" ordered="false" lowerBound="1" eType="GUID+0410da0b-81ec-4a14-a968-fd5d3d4d8847_eAnnotations_0_contents_0_eClassifiers_9" defaultValueLiteral="BarGraph"/>
+                <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0_contents_0_eClassifiers_64_eStructuralFeatures_0" name="Metrics_Chart_Type" ordered="false" lowerBound="1" eType="GUID+dd4450c7-3ddf-4845-8345-937fa686693c_eAnnotations_0_contents_0_eClassifiers_8" defaultValueLiteral="BarGraph"/>
                 <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="GUID+0d7c31da-7afa-4eca-b608-47dcf53db5ec_Profile_eAnnotations_0_contents_0_eClassifiers_64_eStructuralFeatures_1" name="Metrics_DisplayTextList" ordered="false" upperBound="-1">
                   <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
                 </eStructuralFeatures>
