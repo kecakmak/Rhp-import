@@ -552,7 +552,7 @@ Baugruppennummer,Primary_Text,id,isHeading,parentBinding,module,Artifact_Type
 0897,Vorrichtungen_usw._für_Geräte_Werkzeuge_Ersatzteile_für_Waffenanlagen,7795,false,11282,12505,Baugruppe
 0898,Vorrichtungen_usw._für_Geräte_Werkzeuge_Ersatzteile_für_Sperrwaffenanlagen,8010,false,11282,12505,Baugruppe
 0899,Vorrichtungen_usw._für_Geräte_Werkzeuge_Werkzeugmaschinen_und_Ersatzteile_für_Elektrische_Anlagen,12399,false,11282,12505,Baugruppe
-0900,Betriebsangelegenheiten_für_alle_Hauptbauabschnitte,,6760,false,11790,12505,Baugruppe
+0900,Betriebsangelegenheiten_für_alle_Hauptbauabschnitte,6760,false,11790,12505,Baugruppe
 0900,Übersicht_und_Allgemeines,7439,false,6760,12505,Baugruppe
 0901,Verträge,8185,false,7439,12505,Baugruppe
 0902,Management,10559,false,7439,12505,Baugruppe
