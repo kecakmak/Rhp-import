@@ -8,7 +8,19 @@ use strict;
 open(FI, '>', "rhp_import.xmi") or die $!;
 print FI "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 print FI "<xmi:XMI xmi:version=\"2.1\" xmlns:xmi=\"http:\/\/schema.omg.org\/spec\/XMI\/2.1\" xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\" xmlns:CG=\"http:\/\/RhapsodyStandardModel.RhpProperties\/schemas/CG\/_Js860AdAEe20L6GhnqQRdw\/0\" xmlns:RHP=\"http:\/\/RhapsodyStandardModel.RhpProperties\/schemas/RHP\/_Js860QdAEe20L6GhnqQRdw\/0\" xmlns:RhapsodyProfile=\"http:\/\/RhapsodyStandardModel\/schemas\/RhapsodyProfile\/_Js8TwAdAEe20L6GhnqQRdw\/0\" xmlns:ecore=\"http:\/\/www.eclipse.org\/emf\/2002/Ecore\" xmlns:uml=\"http:\/\/www.omg.org\/spec\/UML\/20090901\" xsi:schemaLocation=\"http:\/\/RhapsodyStandardModel.RhpProperties\/schemas\/CG\/_Js860AdAEe20L6GhnqQRdw\/0 #GUID+RhpProperties_Package_packagedElement_2148_eAnnotations_0_contents_0 http:\/\/RhapsodyStandardModel.RhpProperties\/schemas\/RHP\/_Js860QdAEe20L6GhnqQRdw\/0 #GUID+RhpProperties_Package_packagedElement_81114_eAnnotations_0_contents_0 http:\/\/RhapsodyStandardModel\/schemas\/RhapsodyProfile\/_Js8TwAdAEe20L6GhnqQRdw\/0 #GUID_ROOT_Model_packagedElement_1799671379_eAnnotations_0_contents_0 http:\/\/www.omg.org\/spec\/UML\/20090901 http:\/\/www.eclipse.org\/uml2\/2.0.0\/UML\">\n<uml:Model name=\"Antriebsbeispiel\">\n<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P01\" name=\"NVL_Profile\">
-      <packagedElement xmi:type=\"uml:Enumeration\" xmi:id=\"GUID+5069770d-2b99-423e-813f-13ce5dc427c4\" name=\"Systemebene\">
+      <packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P_Gesamtsystem\" name=\"Gesamtsystem\">
+		<packagedElement xmi:type=\"uml:Stereotype\" xmi:id=\"S_Gesamtsystem\" name=\"Gesamtsystem\">
+			<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"t_grandparent\"  name=\"Systemebene\" visibility=\"public\" type=\"GUID+5069770d-2b99-423e-813f-13ce5dc427c4\">
+          <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"tv_grandparent\" value=\"Gesamtsystem\"\/>
+		 <\/ownedAttribute>
+		  		<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"GUID+18d86d71-5bfa-48ce-81be-bc8f2442d9bd\" name=\"MBgV_Konform\" visibility=\"public\">
+            <type xmi:type=\"uml:PrimitiveType\" href=\"http://schema.omg.org/spec/UML/2.1/uml.xml#Boolean\"/>
+            <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"GUID+18d86d71-5bfa-48ce-81be-bc8f2442d9bd_defaultValue\" value=\"False\"/>
+		        <\/ownedAttribute>
+			
+		</packagedElement>
+		
+	  <packagedElement xmi:type=\"uml:Enumeration\" xmi:id=\"GUID+5069770d-2b99-423e-813f-13ce5dc427c4\" name=\"Systemebene\">
         <ownedLiteral xmi:type=\"uml:EnumerationLiteral\" xmi:id=\"GUID+b347e5af-3539-4839-b842-a2247c34592e\" name=\"Gesamtsystem\" enumeration=\"GUID+5069770d-2b99-423e-813f-13ce5dc427c4\">
           <specification xmi:type=\"uml:LiteralString\" xmi:id=\"GUID+b347e5af-3539-4839-b842-a2247c34592e_specification\"/>
         </ownedLiteral>
@@ -81,11 +93,8 @@ while(<FH1>){
 		$grand_parent_no = $id;
 		my $tag_insert = "<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"t_" . $grand_parent_no . "\"  name=\"Systemebene\" visibility=\"public\" type=\"GUID+5069770d-2b99-423e-813f-13ce5dc427c4\">
           <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"tv_" . $id . "\" value=\"Hauptbauabschnitt\"\/>
-        <\/ownedAttribute>
-		<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"GUID+18d86d71-5bfa-48ce-81be-bc8f2442d9bd\" name=\"MBgV_Konform\" visibility=\"public\">
-            <type xmi:type=\"uml:PrimitiveType\" href=\"http://schema.omg.org/spec/UML/2.1/uml.xml#Boolean\"/>
-            <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"GUID+18d86d71-5bfa-48ce-81be-bc8f2442d9bd_defaultValue\" value=\"False\"/>
-          </ownedAttribute>"; 
+        <\/ownedAttribute>"; 
+		my $parent_generalization = "<generalization xmi:type=\"uml:Generalization\" xmi:id=\"S_" . $id . "_S_Gesamtsystem\" general=\"S_Gesamtsystem\" specific=\"S_". $id . "\"/>\n";
 		my $package_end = "</packagedElement>\n";
 		print FW $package_xml;
 		print FW "\n";
@@ -93,6 +102,7 @@ while(<FH1>){
 		print FW $package_end;
 		print FW $stereotype_xml;
 		print FW $tag_insert;
+		print FW $parent_generalization;
 		print FW $package_end;
 		print FW "\n";
 		close(FW);
@@ -118,11 +128,7 @@ while(<FH1>){
 #		my $gen_child = "<packagedElement xmi:type=\"uml:Dependency\" xmi:id=\"S_" . $id . "_S_" . $parent . "\" name=\"S_" . $parent . "\" supplier=\"S_" . $parent . "\" client=\"S_" . $id ."\"/>";
 		my $tag_insert = "<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"t_" . $grand_parent_no . "\"  name=\"Systemebene\" source=\"redefines\" visibility=\"public\" type=\"GUID+5069770d-2b99-423e-813f-13ce5dc427c4\">
           <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"tv_" . $id . "\" value=\"" . $systemebene_value . "\"\/>
-        <\/ownedAttribute>
-		<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"GUID+18d86d71-5bfa-48ce-81be-bc8f2442d9bd\" name=\"MBgV_Konform\" visibility=\"public\">
-            <type xmi:type=\"uml:PrimitiveType\" href=\"http://schema.omg.org/spec/UML/2.1/uml.xml#Boolean\"/>
-            <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"GUID+18d86d71-5bfa-48ce-81be-bc8f2442d9bd_defaultValue\" value=\"False\"/>
-          </ownedAttribute>"; 
+        <\/ownedAttribute>"; 
 		
 		if ($indent ne "___") {
 			$package_xml_child = "<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P_" . $id  . "\" name=\"_" . $package_name . "\">\n";
@@ -152,7 +158,7 @@ while(<FH1>){
 }
 
 open(FI, '>>', "rhp_import.xmi") or die $!;
-print FI "<\/packagedElement><\/uml:Model><\/xmi:XMI>\n";
+print FI "<\/packagedElement><\/packagedElement><\/uml:Model><\/xmi:XMI>\n";
 close(FI);
 close(FH1);
 close(FH1);

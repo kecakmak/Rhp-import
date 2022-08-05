@@ -2,8 +2,9 @@
 use warnings;
 use strict;
 
-my $rhp_file = "C:\\Installs\\NVL_Rhapsody-Template\\temp\\NVL_Rhapsody-Template\\Project\\Project_rpy\\Gesamtsystem.sbsx";
-my $rhp_file_new = "C:\\Installs\\NVL_Rhapsody-Template\\temp\\NVL_Rhapsody-Template\\Project\\Project_rpy\\Gesamtsystem.sbsx.bak";
+my $rhp_file = "C:\\Installs\\NVL_Rhapsody-Template\\NVL\\Project_rpy\\Gesamtsystem.sbsx";
+my $rhp_file_new = "C:\\Installs\\NVL_Rhapsody-Template\\NVL\\Project_rpy\\Gesamtsystem.sbsx.bak";
+my $rhp_file_backup = "C:\\Installs\\NVL_Rhapsody-Template\\NVL\\Project_rpy\\Gesamtsystem.sbsx.bck";
 open (INT, '>', $rhp_file_new) or die $!;
 close (INT);
 
@@ -49,7 +50,7 @@ my $system_level_tag_id="";
 my $tag_value_id="";
 my $literal_id="";
 
-my $tag_name_control="SystemLevel";
+my $tag_name_control="Systemebene";
 
 my $hide_tag_text = "<_base type=\"r\"><IHandle type=\"e\"><_hm2Class type=\"a\">ITag</_hm2Class><_hid type=\"a\">REPLACE_HERE</_hid></IHandle></_base>";
 
@@ -154,10 +155,10 @@ open(RO1, '<', "mapping_file.txt") or die $!;
 #rename($mapping, $mapping.'.bak');
 
 my $parent0 = "";
-my $parent_1 = "A0";
-my $parent_2 = "A1";
-my $parent_3 = "A2";
-my $parent_4 = "A3";
+my $parent_1 = "Hauptbauabschnitt";
+my $parent_2 = "Bauabschnitt";
+my $parent_3 = "Hauptbaugruppe";
+my $parent_4 = "Baugruppe";
 
 #open(IN, '<', $rhp_file . '.bak') or die $!;
 #open(OUT, '>', $rhp_file) or die $!;
@@ -168,10 +169,10 @@ while (<RO1>) {
 	my $id0="";
 	my $tag_v = ""; 
 	($id0, $tag_v) = split(/::/,$_);
-	if ($tag_v eq "A0") {$parent_1 = $id0;}
-	elsif($tag_v eq "A1") {$parent_2 = $id0;}
-	elsif($tag_v eq "A2"){$parent_3 = $id0;}
-	elsif($tag_v eq "A3") {$parent_4 = $id0;}
+	if ($tag_v eq "Gesamtsystem") {$parent_1 = $id0;}
+	elsif($tag_v eq "Hauptbauabschnitt") {$parent_2 = $id0;}
+	elsif($tag_v eq "Bauabschnitt"){$parent_3 = $id0;}
+	elsif($tag_v eq "Hauptbaugruppe") {$parent_4 = $id0;}
 }
 close(RO1);
 
@@ -214,25 +215,26 @@ close(RO1);
 					
 					if ($string eq $id){
 						$tag_id_for_change = $id;
-						if ($tag_v eq "A0"){$parent_tag="no_parent";}
-						elsif ($tag_v eq "A1"){$parent_tag=$parent_1;}
-						elsif ($tag_v eq "A2"){$parent_tag=$parent_2;}
-						elsif ($tag_v eq "A3"){$parent_tag=$parent_3;}
-						elsif ($tag_v eq "A4"){$parent_tag=$parent_4;}
+						if ($tag_v eq "Gesamtsystem"){$parent_tag="no_parent";}
+						elsif ($tag_v eq "Hauptbauabschnitt"){$parent_tag=$parent_1;}
+						elsif ($tag_v eq "Bauabschnitt"){$parent_tag=$parent_2;}
+						elsif ($tag_v eq "Hauptbaugruppe"){$parent_tag=$parent_3;}
+						elsif ($tag_v eq "Baugruppe"){$parent_tag=$parent_4;}
 						
 					}
 				}
 			}
 				
 			if ($tag_id_for_change ne "") { 
-				 if ((index($orig_line, "<AggregatesList") != -1) and (index($prev_line, "<_isOrdered type=") != -1) and ($parent_tag ne "no_parent")){
-					print "$orig_line\n";
-					print "$prev_line\n";
+				 if ((index($orig_line, "<AggregatesList") != -1) and (index($prev_line, "<_isOrdered type=") != -1) and (($parent_tag ne "no_parent") or ($parent_tag ne ""))){
+					# print "$orig_line\n";
+					# print "$prev_line\n";
 					print "parent: $parent_tag\n";
 					print "oztag: $tag_id_for_change\n\n\n";
 					$hide_tag_text=~s/REPLACE_HERE/$parent_tag/ig; 
 					print OUT "$hide_tag_text\n";
 					$hide_tag_text=~s/$parent_tag/REPLACE_HERE/ig;
+					print "text: $hide_tag_text\n";
 					}
 			}
 		}
@@ -249,3 +251,6 @@ close(OUT);
 
 
 close(RO2);
+
+rename($rhp_file, $rhp_file_backup);
+rename($rhp_file_new, $rhp_file);
