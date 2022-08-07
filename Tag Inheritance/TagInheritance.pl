@@ -2,9 +2,9 @@
 use warnings;
 use strict;
 
-my $rhp_file = "C:\\Installs\\NVL_Rhapsody-Template\\NVL\\Project_rpy\\Gesamtsystem.sbsx";
-my $rhp_file_new = "C:\\Installs\\NVL_Rhapsody-Template\\NVL\\Project_rpy\\Gesamtsystem.sbsx.bak";
-my $rhp_file_backup = "C:\\Installs\\NVL_Rhapsody-Template\\NVL\\Project_rpy\\Gesamtsystem.sbsx.bck";
+my $rhp_file = "C:\\Installs\\NVL_Rhapsody-Template\\NVL1\\NVL1_rpy\\Gesamtsystem.sbsx";
+my $rhp_file_new = "C:\\Installs\\NVL_Rhapsody-Template\\NVL1\\NVL1_rpy\\Gesamtsystem.sbsx.bak";
+my $rhp_file_backup = "C:\\Installs\\NVL_Rhapsody-Template\\NVL1\\NVL1_rpy\\Gesamtsystem.sbsx.bck";
 open (INT, '>', $rhp_file_new) or die $!;
 close (INT);
 
@@ -46,11 +46,14 @@ my $in_stereotype="";
 my $in_tag="";
 my $tag_value="";
 my $tag_id="";
+my $konform_id="";
 my $system_level_tag_id="";
+my $konform_tag_id="";
 my $tag_value_id="";
 my $literal_id="";
 
 my $tag_name_control="Systemebene";
+my $tag_konform_control="MBgV_Konform";
 
 my $hide_tag_text = "<_base type=\"r\"><IHandle type=\"e\"><_hm2Class type=\"a\">ITag</_hm2Class><_hid type=\"a\">REPLACE_HERE</_hid></IHandle></_base>";
 
@@ -93,8 +96,13 @@ while(<FI>){
 			if ($string eq $tag_name_control){
 				$system_level_tag_id = "true";
 			}
+			elsif ($string eq $tag_konform_control){
+				$konform_tag_id = "true";
+				$konform_id = $tag_id;
+			}
 			else {
 				$system_level_tag_id = "false";
+				$konform_tag_id = "false";
 			}
 				
 		}
@@ -115,7 +123,26 @@ while(<FI>){
 					$tag_value_id = $string; 
 				}
 			}			
-		}	
+		}
+#		elsif ($konform_tag_id eq "true") {
+#			if (index($string, $aggregate_on) != -1) {
+#				$in_aggregate = "true"; 	
+#			}
+#			if (index($string, $aggregate_off) != -1) {
+#				$in_aggregate = "false"; 
+#			}		
+#
+#			if ($in_aggregate eq "true" ) {
+#				if (index($string, $aggregate_value_on) != -1) {
+#					$string=~s/$aggregate_value_on//ig;
+#					$string=~s/$aggregate_value_off//ig;
+#					$string=~s/\t//ig;
+#					$konform_id = $string; 
+#				}
+#			}			
+#				
+#		}
+		
 	}
 	
 	elsif ($in_tag = "false"){
@@ -134,7 +161,9 @@ while(<FI>){
 					$string=~s/$ls_value_end//ig;
 					$string=~s/\t//ig;
 					my $ls_value = $string;
-					print WR $tag_id . "::" . $ls_value . "\n";
+					if ($ls_value ne "False"){ 
+						print WR $tag_id . "::" . $ls_value . "::" . $konform_id . "\n";
+					}
 				}
 			}
 			
@@ -185,6 +214,8 @@ close(RO1);
 	my $prev_line = "";	
 	my $parent_tag = "";
 	my $tag_id_for_change = "";
+	$in_tag = "false";
+	my $this_is_xmi_import_tag = "NA";	
 	
 	while(<IN>){
 
@@ -193,12 +224,18 @@ close(RO1);
 		my $orig_line = $string;
 
 		if (index($string, $tag_on) != -1) {
-		$in_tag = "true";
+			$in_tag = "true";
 		}
 		elsif (index($string, $tag_off) != -1) {
 			$in_tag = "false";
-		}
+		}		
+		
+
+		
 		if ($in_tag eq "true"){
+				
+			open (TAGTEMP, '>>', "tag_temp.txt");
+			
 
 			if (index($string, $tag_id_prefix) != -1) {
 				$string=~s/$tag_id_prefix//ig;
@@ -220,9 +257,10 @@ close(RO1);
 						elsif ($tag_v eq "Bauabschnitt"){$parent_tag=$parent_2;}
 						elsif ($tag_v eq "Hauptbaugruppe"){$parent_tag=$parent_3;}
 						elsif ($tag_v eq "Baugruppe"){$parent_tag=$parent_4;}
-						
+						$this_is_xmi_import_tag = "false";						
 					}
 				}
+
 			}
 				
 			if ($tag_id_for_change ne "") { 
@@ -232,19 +270,54 @@ close(RO1);
 					print "parent: $parent_tag\n";
 					print "oztag: $tag_id_for_change\n\n\n";
 					$hide_tag_text=~s/REPLACE_HERE/$parent_tag/ig; 
-					print OUT "$hide_tag_text\n";
+					print TAGTEMP "$hide_tag_text\n";
 					$hide_tag_text=~s/$parent_tag/REPLACE_HERE/ig;
 					print "text: $hide_tag_text\n";
 					}
 			}
+			
+			if ((index($string, "<_name type=\"a\">XMIId") != -1) or ($this_is_xmi_import_tag eq "true")) {
+				close(TAGTEMP);
+				open (TAGEMPTY, '>', "tag_temp.txt");
+				close(TAGEMPTY);
+#				$in_tag="false";
+				$this_is_xmi_import_tag = "true";
+				$orig_line = "";
+			}
+			else {
+				print TAGTEMP "$orig_line\n";
+				close(TAGTEMP);
+			}
+	
 		}
-		
+		$prev_line = $orig_line;		
 		if ($in_tag eq "false"){
 			$tag_id_for_change = "";
 			$parent_tag = "";
-		}
-		print OUT "$orig_line\n";
-		$prev_line = $orig_line;
+
+			if ($this_is_xmi_import_tag eq "false") {
+				open (TAGTEMP1, '<', "tag_temp.txt");
+				my $line_number = 0;
+				while(<TAGTEMP1>){
+					chomp($_);
+					print OUT "$_\n";
+					$line_number++;
+				}
+			if (index($string, "</ITag>")){print OUT "</ITag>";}
+#				if ($line_number > 1){print OUT "</ITag>";}
+				close (TAGTEMP1);
+				$orig_line = "";
+				$this_is_xmi_import_tag = "NA";
+				
+				open (TAGEMPTY, '>', "tag_temp.txt");
+				close(TAGEMPTY);				
+			}
+			elsif($this_is_xmi_import_tag eq "NA") {print OUT "$orig_line\n";}
+			elsif ($this_is_xmi_import_tag eq "true"){$this_is_xmi_import_tag = "NA";}
+
+		}	
+
+
 	}
 close(IN);	
 close(OUT);

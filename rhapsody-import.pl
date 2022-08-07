@@ -13,10 +13,10 @@ print FI "<xmi:XMI xmi:version=\"2.1\" xmlns:xmi=\"http:\/\/schema.omg.org\/spec
 			<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"t_grandparent\"  name=\"Systemebene\" visibility=\"public\" type=\"GUID+5069770d-2b99-423e-813f-13ce5dc427c4\">
           <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"tv_grandparent\" value=\"Gesamtsystem\"\/>
 		 <\/ownedAttribute>
-		  		<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"GUID+18d86d71-5bfa-48ce-81be-bc8f2442d9bd\" name=\"MBgV_Konform\" visibility=\"public\">
+		  	<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"GUID+18d86d71-5bfa-48ce-81be-bc8f2442d9bd\" name=\"MBgV_Konform\" visibility=\"public\">
             <type xmi:type=\"uml:PrimitiveType\" href=\"http://schema.omg.org/spec/UML/2.1/uml.xml#Boolean\"/>
             <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"GUID+18d86d71-5bfa-48ce-81be-bc8f2442d9bd_defaultValue\" value=\"False\"/>
-		        <\/ownedAttribute>
+		 <\/ownedAttribute>
 			
 		</packagedElement>
 		
@@ -42,7 +42,7 @@ close (FI);
 # export_dng.csv file is the exported file from the DNG Module view. Please refer to the document: "Bulk Import of DNG Module Artifacts into Rhapsody" 
 # for details of how to export DNG Module 
 # IMPORTANT NOTE: Please do not forget to delete the final part of this file starting with "METADATA" till the end. Do not leave new line characters at the end.
-my $file = "export_dng.csv";
+my $file = "export_dng-to-test.csv";
 
 ## We need to trim some characters. Because they would not be accepted by Rhapsody import. Also we need clean comma sepereated values there should be no 
 # commas within the text of the artifact. 
@@ -93,7 +93,11 @@ while(<FH1>){
 		$grand_parent_no = $id;
 		my $tag_insert = "<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"t_" . $grand_parent_no . "\"  name=\"Systemebene\" visibility=\"public\" type=\"GUID+5069770d-2b99-423e-813f-13ce5dc427c4\">
           <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"tv_" . $id . "\" value=\"Hauptbauabschnitt\"\/>
-        <\/ownedAttribute>"; 
+        <\/ownedAttribute>
+		<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"GUID+18d86d71-5bfa-48ce-81be-bc8f2442d9bd\" name=\"MBgV_Konform\" visibility=\"public\">
+            <type xmi:type=\"uml:PrimitiveType\" href=\"http://schema.omg.org/spec/UML/2.1/uml.xml#Boolean\"/>
+            <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"GUID+18d86d71-5bfa-48ce-81be-bc8f2442d9bd_defaultValue\" value=\"False\"/>
+		 <\/ownedAttribute>"; 
 		my $parent_generalization = "<generalization xmi:type=\"uml:Generalization\" xmi:id=\"S_" . $id . "_S_Gesamtsystem\" general=\"S_Gesamtsystem\" specific=\"S_". $id . "\"/>\n";
 		my $package_end = "</packagedElement>\n";
 		print FW $package_xml;
@@ -128,7 +132,11 @@ while(<FH1>){
 #		my $gen_child = "<packagedElement xmi:type=\"uml:Dependency\" xmi:id=\"S_" . $id . "_S_" . $parent . "\" name=\"S_" . $parent . "\" supplier=\"S_" . $parent . "\" client=\"S_" . $id ."\"/>";
 		my $tag_insert = "<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"t_" . $grand_parent_no . "\"  name=\"Systemebene\" source=\"redefines\" visibility=\"public\" type=\"GUID+5069770d-2b99-423e-813f-13ce5dc427c4\">
           <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"tv_" . $id . "\" value=\"" . $systemebene_value . "\"\/>
-        <\/ownedAttribute>"; 
+        <\/ownedAttribute>
+		<ownedAttribute xmi:type=\"uml:Property\" xmi:id=\"GUID+18d86d71-5bfa-48ce-81be-bc8f2442d9bd\" name=\"MBgV_Konform\" visibility=\"public\">
+            <type xmi:type=\"uml:PrimitiveType\" href=\"http://schema.omg.org/spec/UML/2.1/uml.xml#Boolean\"/>
+            <defaultValue xmi:type=\"uml:LiteralString\" xmi:id=\"GUID+18d86d71-5bfa-48ce-81be-bc8f2442d9bd_defaultValue\" value=\"False\"/>
+		 <\/ownedAttribute>"; 
 		
 		if ($indent ne "___") {
 			$package_xml_child = "<packagedElement xmi:type=\"uml:Profile\" xmi:id=\"P_" . $id  . "\" name=\"_" . $package_name . "\">\n";
