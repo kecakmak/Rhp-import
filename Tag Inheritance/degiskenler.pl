@@ -39,3 +39,28 @@ my $literal_id="";
 my $tag_name_control="Systemebene";
 
 my $hide_tag_text = "<_base type=\"r\"><IHandle type=\"e\"><_hm2Class type=\"a\">ITag</_hm2Class><_hid type=\"a\">REPLACE_HERE</_hid></IHandle></_base>";
+
+my $parent0 = "";
+my $parent_1 = "Hauptbauabschnitt";
+my $parent_2 = "Bauabschnitt";
+my $parent_3 = "Hauptbaugruppe";
+my $parent_4 = "Baugruppe";
+
+	my $prev_line = "";	
+	my $parent_tag = "";
+	my $tag_id_for_change = "";
+	
+	$in_tag = "false";
+	
+	
+	
+	$string = </ITag>
+	$orig_line = </ITag>
+
+	my $this_is_xmi_import_tag = "NA";
+
+
+	$prev_line = </IStereotype>
+	
+	
+	

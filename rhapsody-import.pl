@@ -42,7 +42,7 @@ close (FI);
 # export_dng.csv file is the exported file from the DNG Module view. Please refer to the document: "Bulk Import of DNG Module Artifacts into Rhapsody" 
 # for details of how to export DNG Module 
 # IMPORTANT NOTE: Please do not forget to delete the final part of this file starting with "METADATA" till the end. Do not leave new line characters at the end.
-my $file = "export_dng-to-test.csv";
+my $file = "export_dng.csv";
 
 ## We need to trim some characters. Because they would not be accepted by Rhapsody import. Also we need clean comma sepereated values there should be no 
 # commas within the text of the artifact. 
