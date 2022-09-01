@@ -3,7 +3,7 @@
 use warnings;
 use strict;
 
-my $file = "C:\\Installs\\NVL_Rhapsody-Template\\NVL\\Project_rpy\\Gesamtsystem.sbsx";
+my $file = "TestFolder/TestFile";
 
 rename($file, $file . '.bak');
 open(IN, '<', $file . '.bak') or die $!;
@@ -19,6 +19,7 @@ while(<IN>){
 	$_=~s/uc4/Ä/ig;	
 	$_=~s/udf/ß/ig;		
 	print OUT $_;	
+	print OUT "a new line";
 }
 close(IN);
 close(OUT);
