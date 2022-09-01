@@ -1,0 +1,13 @@
+
+
+Prerequisites: 
+- A perl compiler to run the perl scripts. 
+- exported DNG module into a csv file ("export_dng.csv") 
+
+
+
+Files to be used: 
+- export_dng.csv: Exported DNG Module. We use this file to prepare an xmi file to import into Rhapsody. 
+- 1.rhapsody-import.pl: creates a file named "rhp_import.xmi". Use this file to import into Rhapsody via XMI Import utility. Right now the German characters are corrupted and the tags are inherited. This creates duplicates tags with different values for tags. 
+- "2.correct_to_German.pl": corrects the German characters (after import). Copy this script to the rhapsody project file location and update the "$file" variable with the necessary path and file name (use the .sbsx file which has wrong characters) 
+- "3.TagInheritance.pl": The tags are still inherited and we do want to hide tags from parent stereotypes. We run this script to hide the inherited tags. Please update the "$rhp_file" variable in the script according to the relevant ".sbsx" file. 
